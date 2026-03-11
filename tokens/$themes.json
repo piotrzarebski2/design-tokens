@@ -255,7 +255,7 @@
       "color-dark.violet.600": "S:d5d581efeff05c15394ba6eb3aef2a7e75e96ace,",
       "color-dark.violet.700": "S:a356f05baf9148023bee1fa671a179259ff8a35a,",
       "color-dark.violet.800": "S:f15fa09f09cc5fdd88f1323f1df5f70046540c9e,",
-      "color-dark.violet.900": "S:f0737c3714b7f885aacfd0af642b4f4acd34759b,",
+      "color-dark.violet.900": "S:f0737c3714b7f885aacfd0af642b4f4acd34759b,"
     },
     "$figmaVariableReferences": {
       "color.mono.00": "fce8ce235b5ed374a8b1dff83cbace6d1d2cc136",
@@ -537,7 +537,7 @@
       "radius.md": "3b5abcf02ed8d78558e96e712dd72a4ef3a00e3a",
       "radius.lg": "141d3031aaedcdf4f9db17ed1f75edf709eddc7e",
       "border.width.1": "27f6cad9b56061fe9486d831a3d83baee02e1e27",
-      "border.width.2": "3bcd9cc963fbdcbf6149cffa543a29951a9e0779",
+      "border.width.2": "3bcd9cc963fbdcbf6149cffa543a29951a9e0779"
     },
     "$figmaCollectionId": "VariableCollectionId:17428:2911",
     "$figmaModeId": "17428:0",
