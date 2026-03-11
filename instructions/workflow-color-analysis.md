@@ -26,11 +26,14 @@ https://www.figma.com/design/{file-id}/branch/{branch-id}/{name}?node-id={node-i
 
 ## Dostępne narzędzia MCP
 
+Serwer: `figma-desktop` (lokalny, wymaga Figma Desktop z włączonym Dev Mode MCP)
+
 | Narzędzie | Co zwraca |
 |-----------|-----------|
-| `Figma:get_screenshot` | Wizualny podgląd komponentu |
-| `Figma:get_design_context` | Pełne dane: kolory, spacing, typografia, struktura |
-| `Figma:get_variable_defs` | Zmienne/tokeny już przypisane do node w Figmie |
+| `figma-desktop:get_screenshot` | Wizualny podgląd komponentu |
+| `figma-desktop:get_design_context` | Pełne dane: kolory, spacing, typografia, struktura |
+| `figma-desktop:get_variable_defs` | Zmienne/tokeny już przypisane do node w Figmie |
+| `figma-desktop:get_metadata` | Struktura XML: ID, nazwy, typy, pozycje, rozmiary |
 
 ---
 
@@ -38,11 +41,12 @@ https://www.figma.com/design/{file-id}/branch/{branch-id}/{name}?node-id={node-i
 
 ### Krok 1: Pobierz dane z Figmy automatycznie
 
-Gdy użytkownik poda link — bez pytania wywołaj wszystkie trzy narzędzia:
+Gdy użytkownik poda link — bez pytania wywołaj wszystkie narzędzia:
 
-1. `Figma:get_screenshot` → podgląd wizualny
-2. `Figma:get_design_context` → wszystkie właściwości
-3. `Figma:get_variable_defs` → już przypisane tokeny
+1. `figma-desktop:get_screenshot` → podgląd wizualny
+2. `figma-desktop:get_design_context` → wszystkie właściwości
+3. `figma-desktop:get_variable_defs` → już przypisane tokeny
+4. `figma-desktop:get_metadata` → struktura i ID węzłów (pomocne przy złożonych komponentach)
 
 ---
 

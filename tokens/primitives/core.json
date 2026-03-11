@@ -1331,10 +1331,6 @@
     "$type": "other",
     "$value": "0.15"
   },
-  "tescik_dla_supernova": {
-    "$type": "color",
-    "$value": "#aeff00"
-  },
   "Shadows": {
     "Shadow 1": {
       "$type": "boxShadow",

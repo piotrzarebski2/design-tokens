@@ -114,6 +114,60 @@ chat.input.border.color.focus
 
 ---
 
+## Stany — konwencja różna per warstwa
+
+> ⚠️ Stany interaktywne są wyrażane inaczej w warstwie Semantic i Module. Nie wolno mieszać tych konwencji.
+
+### Semantic — stan jako przyrostek CamelCase
+
+W warstwie semantycznej stan jest **dołączony bezpośrednio do modyfikatora** tworząc jeden segment:
+
+```
+color.{property}.{category}.{modifier}{State}
+
+color.background.brand.solid        ← sam modifier
+color.background.brand.solidHover   ← modifier + stan zlepione
+color.background.brand.solidActive
+color.background.brand.solidActive
+color.border.base.defaultHover
+```
+
+Zasady:
+- Stan zaczyna się **wielką literą** i jest sklejony z modyfikatorem
+- Brak oddzielnego segmentu dla stanu — jest częścią nazwy modyfikatora
+- Dostępne stany-przyrostki: `Hover`, `Active`, `Focus`, `Disabled`
+
+### Module — stan jako osobny segment lowercase
+
+W warstwie modułowej stan jest **osobnym segmentem** na końcu nazwy:
+
+```
+{component}.{variant}.{element}.{property}.{state}
+
+buttons.variant.primary.bg.default   ← stan jako osobny segment
+buttons.variant.primary.bg.hover
+buttons.variant.primary.bg.disabled
+avatar.border.color.focus
+```
+
+Zasady:
+- Stan jest **małymi literami**, zawsze na końcu
+- Stan jest **osobnym segmentem** oddzielonym kropką — nigdy nie sklejamy go z elementem
+- Dostępne stany: `default`, `hover`, `focus`, `active`, `selected`, `disabled`, `error`, `validated`
+
+### Zakaz mieszania
+
+```
+❌ buttons.variant.primary.bg.defaultHover   ← styl semantic w module
+❌ color.background.brand.solid.hover        ← styl module w semantic
+❌ buttons.variant.primary.bgHover           ← stan sklejony z elementem
+
+✅ color.background.brand.solidHover         ← semantic: sklejone
+✅ buttons.variant.primary.bg.hover          ← module: osobny segment
+```
+
+---
+
 ## Zasady nazewnictwa
 
 ### Separator: kropka `.`

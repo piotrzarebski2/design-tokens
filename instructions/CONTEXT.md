@@ -68,6 +68,8 @@ color.{property}.{category}.{modifier}{State}
 **Modifiers:** `default`, `subtle`, `muted`, `strong`, `solid`, `inverted`  
 **States (suffix):** `Hover`, `Active`, `Focus`, `Disabled`
 
+> Stan w semantic jest **przyrostkiem CamelCase sklejonym z modyfikatorem**: `solidHover`, `defaultHover`. Nigdy nie jest osobnym segmentem.
+
 **Zasada specjalna — tokeny achromatyczne:**
 - `achromatic.max` — biały w light, czarny w dark (czyste odwrócenie)
 - `achromatic.min` — czarny w light, biały w dark
@@ -91,6 +93,16 @@ color.{property}.{category}.{modifier}{State}
 
 **Elementy:** `bg`, `border`, `label`, `placeholder`, `description`, `text`, `icon`  
 **Stany:** `default`, `hover`, `focus`, `active`, `selected`, `disabled`, `error`, `validated`
+
+> Stan w module jest **osobnym segmentem lowercase na końcu nazwy**: `.bg.hover`, `.border.color.disabled`. Nigdy nie skleja się go z elementem ani nie stosuje CamelCase.
+
+**Zakaz mieszania konwencji:**
+```
+❌ buttons.variant.primary.bg.defaultHover   ← styl semantic w module
+❌ color.background.brand.solid.hover        ← styl module w semantic
+✅ color.background.brand.solidHover         ← poprawnie: semantic
+✅ buttons.variant.primary.bg.hover          ← poprawnie: module
+```
 
 ---
 
@@ -147,11 +159,21 @@ status-pill.variant.{neutral|success|warning|error}.border.{solid|dashed}
 
 ```
 design-tokens/
-├── tokens/               ← JSON tokenów (Token Studio sync)
-│   ├── global.json       ← primitives
-│   ├── semantic.json     ← semantic layer
-│   └── ...               ← module tokens per component
-├── docs/                 ← dokumentacja tokenów (MD)
+├── tokens/                          ← JSON tokenów (Token Studio sync)
+│   ├── $metadata.json               ← kolejność tokenSetów
+│   ├── $themes.json                 ← mapowanie tematów + referencje Figma Variables
+│   ├── primitives/
+│   │   └── core.json                ← surowe wartości (color, space, typography, radius, shadows…)
+│   ├── semantic/
+│   │   ├── Light.json               ← tokeny semantyczne — tryb jasny
+│   │   ├── Dark.json                ← tokeny semantyczne — tryb ciemny
+│   │   └── custom-color/            ← semantic per kolor (blue, grey, red, green, yellow…)
+│   │       └── *.json
+│   ├── surface/
+│   │   └── base.json                ← tokeny surface (wzorce powierzchni: base, raised, floating…)
+│   └── modules/
+│       └── base.json                ← tokeny modułowe wszystkich komponentów
+├── docs/                            ← dokumentacja tokenów (MD)
 │   ├── 00-spis-tresci.md
 │   ├── 01-wprowadzenie.md
 │   ├── 02-warstwy.md
@@ -159,11 +181,9 @@ design-tokens/
 │   ├── 04-kolory.md
 │   ├── 05-tokeny-modulowe.md
 │   └── 06-wyszukiwanie-i-tworzenie-tokenow.md
-└── instructions/         ← instrukcje dla Claude
-    ├── CONTEXT.md        ← ten plik
-    ├── workflow-color-analysis.md
-    ├── workflow-spacing.md
-    └── workflow-documentation.md
+└── instructions/                    ← instrukcje dla Claude
+    ├── CONTEXT.md                   ← ten plik
+    └── workflow-color-analysis.md
 ```
 
 ---

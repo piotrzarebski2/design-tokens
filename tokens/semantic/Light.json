@@ -37,6 +37,11 @@
           "$value": "{color.grey.400}",
           "$description": "Strong background - dark grey"
         },
+        "strongHover": {
+          "$type": "color",
+          "$value": "{color.grey.500}",
+          "$description": "Hover state for strong background"
+        },
         "disabled": {
           "$type": "color",
           "$value": "{color.grey.100}",
@@ -578,7 +583,7 @@
     },
     "focus": {
       "base": {
-        "defult": {
+        "default": {
           "$type": "color",
           "$value": "{color.blue.600}"
         },
