@@ -446,6 +446,11 @@
           "$value": "{color-dark.grey.500}",
           "$description": "Strong border - darker"
         },
+        "strongHover": {
+          "$type": "color",
+          "$value": "{color-dark.grey.600}",
+          "$description": "Hover state for strong border"
+        },
         "disabled": {
           "$type": "color",
           "$value": "{color-dark.grey.200}",
