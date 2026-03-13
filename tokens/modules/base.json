@@ -1679,6 +1679,28 @@
           "$description": "Form field text color for disabled state"
         }
       },
+      "affix": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.background.base.subtle}",
+          "$description": "Prefix/suffix background color (light grey)"
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{color.border.base.strong}",
+          "$description": "Prefix/suffix border color"
+        },
+        "text": {
+          "$type": "color",
+          "$value": "{color.text.neutral.default}",
+          "$description": "Prefix/suffix text color"
+        },
+        "icon": {
+          "$type": "color",
+          "$value": "{color.icon.base.default}",
+          "$description": "Prefix/suffix icon color"
+        }
+      },
       "borderRadius": {
         "$type": "dimension",
         "$value": "{border.radius.default}",
