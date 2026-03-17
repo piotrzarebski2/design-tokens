@@ -4125,6 +4125,41 @@
       }
     }
   },
+  "inline-edit": {
+    "text": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.text.base.default}",
+        "$description": "Inline edit text color - default state"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{color.text.danger.default}",
+        "$description": "Inline edit text color - error state"
+      }
+    },
+    "icon-btn": {
+      "bg": {
+        "default": {
+          "$type": "color",
+          "$value": "{color.background.base.muted}",
+          "$description": "Edit icon button background - default"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{color.background.base.mutedHover}",
+          "$description": "Edit icon button background - hover"
+        }
+      },
+      "icon": {
+        "default": {
+          "$type": "color",
+          "$value": "{color.icon.base.default}",
+          "$description": "Edit icon (pencil) color"
+        }
+      }
+    }
+  },
   "inline-alert": {
     "icon": {
       "informative": {
