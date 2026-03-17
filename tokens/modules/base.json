@@ -4171,7 +4171,7 @@
       },
       "error": {
         "$type": "color",
-        "$value": "{color.icon.danger.default}",
+        "$value": "{color.icon.neutral.default}",
         "$description": "Error state icon (red.600)"
       },
       "disabled": {
