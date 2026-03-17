@@ -359,14 +359,14 @@
       "success": {
         "default": {
           "$type": "color",
-          "$value": "{color.green.700}",
+          "$value": "{color.green.600}",
           "$description": "Success icon color"
         }
       },
       "warning": {
         "default": {
           "$type": "color",
-          "$value": "{color.yellow.700}",
+          "$value": "{color.yellow.600}",
           "$description": "Warning icon color"
         }
       },
