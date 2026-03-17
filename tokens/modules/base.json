@@ -4124,5 +4124,36 @@
         "$value": "{color.background.neutral.solid}"
       }
     }
+  },
+  "inline-alert": {
+    "icon": {
+      "informative": {
+        "$type": "color",
+        "$value": "{color.icon.base.default}",
+        "$description": "Inline alert icon color for informative variant"
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{color.icon.success.default}",
+        "$description": "Inline alert icon color for success variant"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{color.icon.warning.default}",
+        "$description": "Inline alert icon color for warning variant"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{color.icon.danger.default}",
+        "$description": "Inline alert icon color for error variant"
+      }
+    },
+    "text": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.text.base.muted}",
+        "$description": "Inline alert text color"
+      }
+    }
   }
 }
