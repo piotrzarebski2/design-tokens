@@ -2547,7 +2547,9 @@
       "inline-alert.icon.success": "efed842f11b25e71d40d4e262dbf318a4c7cb9c3",
       "inline-alert.icon.warning": "da1ef0c2e0b0839304caae1d0e29a6b75e19b188",
       "inline-alert.icon.error": "52e33bba9af430103b75189a3f820c3423a30427",
-      "inline-alert.text.default": "b9e94264e6e23c60d219916d2631b24c860f0121"
+      "inline-alert.text.default": "b9e94264e6e23c60d219916d2631b24c860f0121",
+      "description-line.label.text": "81e25cacab8ff024d6b17e79488f81137387799f",
+      "description-line.content.text": "2dacaf977475cffcd07a04e4ad50b25a2a9475e5"
     },
     "$figmaCollectionId": "VariableCollectionId:17428:2913",
     "$figmaModeId": "17428:3",
