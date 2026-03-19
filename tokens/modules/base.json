@@ -1443,44 +1443,44 @@
         "bg": {
           "default": {
             "$type": "color",
-            "$value": "{color.background.base.muted}",
+            "$value": "{color.background.base.subtle}",
             "$description": "Button expander background color for default state"
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.background.base.muted}",
+            "$value": "{color.background.base.subtle}",
             "$description": "Button expander background color for hover state (same as default)"
           },
           "active": {
             "$type": "color",
-            "$value": "{color.background.base.muted}",
+            "$value": "{color.background.base.subtle}",
             "$description": "Button expander background color for active state (same as default)"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{color.background.base.muted}",
+            "$value": "{color.background.base.subtle}",
             "$description": "Button expander background color for disabled state (same as default, opacity applied separately)"
           }
         },
         "border": {
           "default": {
             "$type": "color",
-            "$value": "{color.border.base.default}",
+            "$value": "{color.border.base.strong}",
             "$description": "Button expander border color for default state"
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.border.base.strong}",
+            "$value": "{color.border.base.strongHover}",
             "$description": "Button expander border color for hover state (darker border)"
           },
           "active": {
             "$type": "color",
-            "$value": "{color.border.base.default}",
+            "$value": "{color.border.base.strong}",
             "$description": "Button expander border color for active state (same as default)"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{color.border.base.default}",
+            "$value": "{color.border.base.strong}",
             "$description": "Button expander border color for disabled state (same as default, opacity applied separately)"
           }
         },
