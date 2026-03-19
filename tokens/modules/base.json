@@ -1888,8 +1888,8 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.border.base.strongHover}",
-            "$description": "Checkbox border color for hover state"
+            "$value": "{color.background.brand.solid}",
+            "$description": "Checkbox border color for hover state (blue.600)"
           },
           "blocked": {
             "$type": "color",
