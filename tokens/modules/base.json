@@ -1888,8 +1888,13 @@
           },
           "hover": {
             "$type": "color",
+            "$value": "{color.border.base.strongHover}",
+            "$description": "Checkbox border color for hover state"
+          },
+          "blocked": {
+            "$type": "color",
             "$value": "{color.background.brand.solid}",
-            "$description": "Checkbox border color for focused state"
+            "$description": "Checkbox border color for blocked state (blue.600)"
           },
           "error": {
             "$type": "color",
@@ -1938,18 +1943,23 @@
         "label": {
           "default": {
             "$type": "color",
+            "$value": "{color.text.base.subtle}",
+            "$description": "Checkbox label text color for default state (grey.700)"
+          },
+          "hover": {
+            "$type": "color",
             "$value": "{color.text.base.default}",
-            "$description": "Checkbox label text color for default state"
+            "$description": "Checkbox label text color for hover state (grey.800)"
           },
           "selected": {
             "$type": "color",
             "$value": "{color.text.base.default}",
-            "$description": "Checkbox label text color for selected state"
+            "$description": "Checkbox label text color for selected state (grey.800)"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{color.text.base.default}",
-            "$description": "Checkbox label text color for disabled state (same as default, opacity applied separately)"
+            "$value": "{color.text.base.subtle}",
+            "$description": "Checkbox label text color for disabled state (grey.700, opacity applied separately)"
           }
         },
         "description": {
