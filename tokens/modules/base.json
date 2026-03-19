@@ -1906,7 +1906,7 @@
       "bg": {
         "default": {
           "$type": "color",
-          "$value": "{color.mono.00}",
+          "$value": "{color.background.base.default}",
           "$description": "Checkbox background color for default state"
         },
         "selected": {
