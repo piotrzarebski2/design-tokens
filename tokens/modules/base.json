@@ -4246,5 +4246,21 @@
         "$description": "Inline alert text color"
       }
     }
+  },
+  "description-line": {
+    "label": {
+      "text": {
+        "$type": "color",
+        "$value": "{color.text.base.muted}",
+        "$description": "Description line label text color (grey.600)"
+      }
+    },
+    "content": {
+      "text": {
+        "$type": "color",
+        "$value": "{color.text.base.default}",
+        "$description": "Description line content/value text color (grey.800)"
+      }
+    }
   }
 }
