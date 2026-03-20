@@ -4272,5 +4272,151 @@
         "$description": "Description line content/value text color (grey.800)"
       }
     }
+  },
+  "pagination": {
+    "item": {
+      "size": {
+        "$type": "dimension",
+        "$value": "{size.control.normal}",
+        "$description": "Pagination item size (32px circular button)"
+      },
+      "border": {
+        "radius": {
+          "$type": "dimension",
+          "$value": "{border.radius.full}",
+          "$description": "Pagination item border radius (fully rounded circle)"
+        }
+      },
+      "bg": {
+        "default": {
+          "$type": "color",
+          "$value": "{color.background.base.default}",
+          "$description": "Pagination item background - default state"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{color.background.brand.subtle}",
+          "$description": "Pagination item background - hover state (blue.50)"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{color.background.neutral.solid}",
+          "$description": "Pagination item background - active/current page (grey.700 dark circle)"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{color.background.base.default}",
+          "$description": "Pagination item background - disabled state"
+        }
+      },
+      "text": {
+        "color": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.text.base.muted}",
+            "$description": "Pagination item text color - default state (grey.600)"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{color.text.base.default}",
+            "$description": "Pagination item text color - hover state (grey.800)"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.text.onSolid.neutral}",
+            "$description": "Pagination item text color - active/current page state (white on dark)"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{color.text.base.muted}",
+            "$description": "Pagination item text color - disabled state (grey.600, opacity applied separately)"
+          }
+        },
+        "typography": {
+          "$type": "typography",
+          "$value": "{typography.text.small}",
+          "$description": "Pagination item text typography (small 13px)"
+        }
+      },
+      "disabled": {
+        "opacity": {
+          "$type": "number",
+          "$value": "{opacity.disabled}",
+          "$description": "Pagination item opacity for disabled state"
+        }
+      }
+    },
+    "nav": {
+      "bg": {
+        "default": {
+          "$type": "color",
+          "$value": "{color.background.base.default}",
+          "$description": "Pagination nav arrow button background - default state"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{color.background.base.subtle}",
+          "$description": "Pagination nav arrow button background - hover state (grey.50)"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{color.background.base.default}",
+          "$description": "Pagination nav arrow button background - disabled state"
+        }
+      },
+      "icon": {
+        "default": {
+          "$type": "color",
+          "$value": "{color.icon.base.default}",
+          "$description": "Pagination nav arrow icon color - default state (grey.600)"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{color.icon.base.subtle}",
+          "$description": "Pagination nav arrow icon color - hover state (grey.500)"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{color.icon.base.disabled}",
+          "$description": "Pagination nav arrow icon color - disabled state (grey.400)"
+        }
+      },
+      "disabled": {
+        "opacity": {
+          "$type": "number",
+          "$value": "{opacity.disabled}",
+          "$description": "Pagination nav opacity for disabled state"
+        }
+      }
+    },
+    "more": {
+      "border": {
+        "color": {
+          "$type": "color",
+          "$value": "{color.border.brand.default}",
+          "$description": "Pagination more indicator border color (blue.600, dashed)"
+        },
+        "width": {
+          "$type": "dimension",
+          "$value": "{border.default}",
+          "$description": "Pagination more indicator border width (1px)"
+        },
+        "radius": {
+          "$type": "dimension",
+          "$value": "{border.radius.default}",
+          "$description": "Pagination more indicator border radius (3px)"
+        }
+      },
+      "icon": {
+        "$type": "color",
+        "$value": "{color.icon.base.default}",
+        "$description": "Pagination more indicator icon color (grey.600)"
+      }
+    },
+    "gap": {
+      "$type": "dimension",
+      "$value": "{spacing.gap.xxs}",
+      "$description": "Gap between pagination items (4px)"
+    }
   }
 }
