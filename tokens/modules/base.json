@@ -4420,6 +4420,29 @@
     }
   },
   "progressbar": {
+    "header": {
+      "label": {
+        "color": {
+          "$type": "color",
+          "$value": "{color.text.base.default}",
+          "$description": "Progressbar header label text color"
+        }
+      },
+      "value": {
+        "color": {
+          "$type": "color",
+          "$value": "{color.text.base.default}",
+          "$description": "Progressbar header value text color"
+        }
+      }
+    },
+    "description": {
+      "color": {
+        "$type": "color",
+        "$value": "{form.description.text.color}",
+        "$description": "Progressbar description text color (reuses form description token)"
+      }
+    },
     "bar": {
       "bg": {
         "track": {
@@ -4449,6 +4472,18 @@
         "$type": "dimension",
         "$value": "2px",
         "$description": "Gap between progressbar tile segments"
+      },
+      "paddingY": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.xs}",
+        "$description": "Vertical padding around progressbar bar (8px)"
+      }
+    },
+    "inline": {
+      "gap": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.xs}",
+        "$description": "Gap between inline progressbar bar and value text (8px)"
       }
     }
   }
