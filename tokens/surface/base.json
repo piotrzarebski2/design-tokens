@@ -274,7 +274,7 @@
       "default": {
         "bg": {
           "$type": "color",
-          "$value": "{color.background.base.subtle}",
+          "$value": "{color.background.base.muted}",
           "$description": "Sunken surface background — recessed inner area, subtle grey"
         },
         "border": {
