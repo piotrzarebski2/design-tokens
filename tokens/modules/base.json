@@ -4424,7 +4424,7 @@
       "bg": {
         "track": {
           "$type": "color",
-          "$value": "{color.background.base.muted}",
+          "$value": "{color.background.base.mutedHover}",
           "$description": "Progressbar track background color (unfilled portion)"
         }
       },
