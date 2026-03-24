@@ -4418,5 +4418,38 @@
       "$value": "{spacing.gap.xxs}",
       "$description": "Gap between pagination items (4px)"
     }
+  },
+  "progressbar": {
+    "bar": {
+      "bg": {
+        "track": {
+          "$type": "color",
+          "$value": "{color.background.base.muted}",
+          "$description": "Progressbar track background color (unfilled portion)"
+        }
+      },
+      "borderRadius": {
+        "$type": "dimension",
+        "$value": "3px",
+        "$description": "Border radius for progressbar bar segments"
+      },
+      "height": {
+        "default": {
+          "$type": "dimension",
+          "$value": "6px",
+          "$description": "Default progressbar bar height"
+        },
+        "small": {
+          "$type": "dimension",
+          "$value": "3px",
+          "$description": "Small progressbar bar height"
+        }
+      },
+      "gap": {
+        "$type": "dimension",
+        "$value": "2px",
+        "$description": "Gap between progressbar tile segments"
+      }
+    }
   }
 }
