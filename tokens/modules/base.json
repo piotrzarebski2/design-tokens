@@ -1981,6 +1981,128 @@
         }
       }
     },
+    "radio": {
+      "size": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Radio button size (16px)"
+      },
+      "border": {
+        "radius": {
+          "$type": "dimension",
+          "$value": "50%",
+          "$description": "Radio button border radius (circular)"
+        },
+        "width": {
+          "default": {
+            "$type": "dimension",
+            "$value": "{border.default}",
+            "$description": "Radio button border width for default state (1px)"
+          },
+          "focused": {
+            "$type": "dimension",
+            "$value": "{border.big}",
+            "$description": "Radio button border width for focused state (2px)"
+          }
+        },
+        "color": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.border.base.strong}",
+            "$description": "Radio button border color for default state (grey.300)"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{color.background.brand.solid}",
+            "$description": "Radio button border color for hover state (blue.600)"
+          },
+          "selected": {
+            "$type": "color",
+            "$value": "{color.background.brand.solid}",
+            "$description": "Radio button border color for selected state (blue.600)"
+          }
+        }
+      },
+      "bg": {
+        "default": {
+          "$type": "color",
+          "$value": "{color.background.base.default}",
+          "$description": "Radio button background color for default state (white)"
+        },
+        "selected": {
+          "$type": "color",
+          "$value": "{color.background.brand.solid}",
+          "$description": "Radio button background color for selected state (blue.600)"
+        },
+        "selectedDisabled": {
+          "$type": "color",
+          "$value": "{color.border.base.strongHover}",
+          "$description": "Radio button background color for selected+disabled state (grey.400)"
+        }
+      },
+      "dot": {
+        "color": {
+          "$type": "color",
+          "$value": "{color.background.base.default}",
+          "$description": "Inner dot color for selected radio button (white)"
+        }
+      },
+      "content": {
+        "gap": {
+          "$type": "dimension",
+          "$value": "{spacing.gap.md}",
+          "$description": "Gap between radio button and content (16px)"
+        },
+        "padding": {
+          "default": {
+            "$type": "dimension",
+            "$value": "7px",
+            "$description": "Vertical padding for radio button with label/description (7px)"
+          },
+          "solo": {
+            "$type": "dimension",
+            "$value": "4px",
+            "$description": "Padding for solo radio button (4px all sides)"
+          }
+        }
+      },
+      "text": {
+        "label": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.text.base.subtle}",
+            "$description": "Radio button label text color for default state (grey.700)"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{color.text.base.default}",
+            "$description": "Radio button label text color for hover state (grey.800)"
+          },
+          "selected": {
+            "$type": "color",
+            "$value": "{color.text.base.subtle}",
+            "$description": "Radio button label text color for selected state (grey.700)"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{color.text.base.subtle}",
+            "$description": "Radio button label text color for disabled state (grey.700, opacity applied separately)"
+          }
+        },
+        "description": {
+          "$type": "color",
+          "$value": "{color.text.base.subtle}",
+          "$description": "Radio button description text color (grey.700)"
+        }
+      },
+      "disabled": {
+        "opacity": {
+          "$type": "number",
+          "$value": "{opacity.disabled}",
+          "$description": "Radio button opacity for disabled state (0.4 = 40%)"
+        }
+      }
+    },
     "switch": {
       "size": {
         "width": {
