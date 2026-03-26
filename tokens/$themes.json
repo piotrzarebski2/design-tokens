@@ -2574,7 +2574,17 @@
       "pagination.more.border.width": "c4cb618560a66b2bd2cbddcd7662b5058f70a58e",
       "pagination.more.border.radius": "9eaf38f50eb64dc66d8f3358e205318b6c600ef4",
       "pagination.more.icon": "e2238d9584748751cdbb72788a514153077b4f34",
-      "pagination.gap": "1277a173e7bbf8dd275236beab67d2182d8f6ba6"
+      "pagination.gap": "1277a173e7bbf8dd275236beab67d2182d8f6ba6",
+      "progressbar.header.label.color": "359233aa3aeb737401c4da0e1450ba7dc525b2cd",
+      "progressbar.header.value.color": "f8d0157044db1a5d4fcbb807c227e3ef010c80e8",
+      "progressbar.description.color": "e6c7ae1d6b14c5dc751e6111a6caa35b161d9e3b",
+      "progressbar.bar.bg.track": "fefaa251e10865105052f7fa565bc8f3302077fe",
+      "progressbar.bar.borderRadius": "7be32b8584b6aebf6d25d90174fcdeffb90f7c51",
+      "progressbar.bar.height.default": "6e2c9b3504bbbd976a496c168ddb009990f89e59",
+      "progressbar.bar.height.small": "7915d28b25f02d24ee99f76aab30b4b5b056cd9e",
+      "progressbar.bar.gap": "1b581cdd472250f8f67c42b8bba31a3ebd33e99e",
+      "progressbar.bar.paddingY": "00d4e1b5c3e215fbe65cec2401e39ed337c0dd54",
+      "progressbar.inline.gap": "22c349e3d37ec2ffbe79c574747a02ddfa85868d"
     },
     "$figmaCollectionId": "VariableCollectionId:17428:2913",
     "$figmaModeId": "17428:3",

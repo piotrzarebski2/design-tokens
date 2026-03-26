@@ -597,7 +597,7 @@
           }
         },
         "$type": "color",
-        "$value": "#212324"
+        "$value": "#292b2c"
       },
       "100": {
         "$extensions": {
@@ -1329,7 +1329,7 @@
   },
   "mod": {
     "$type": "other",
-    "$value": "0.15"
+    "$value": "0.18"
   },
   "Shadows": {
     "Shadow 1": {
