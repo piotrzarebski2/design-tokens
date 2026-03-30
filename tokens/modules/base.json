@@ -1366,8 +1366,8 @@
           },
           "y": {
             "$type": "dimension",
-            "$value": "{inset.md} - 1",
-            "$description": "Vertical padding for normal size buttons (7px — TODO: verify visual diff → docelowo {inset.md})"
+            "$value": "{inset.sm} - 1px",
+            "$description": "Vertical padding for normal size buttons (7px — TODO: verify visual diff → docelowo {inset.sm})"
           }
         },
         "large": {
@@ -1378,8 +1378,8 @@
           },
           "y": {
             "$type": "dimension",
-            "$value": "{inset.md} - 2",
-            "$description": "Vertical padding for large size buttons (14px — TODO: verify visual diff → docelowo {inset.md})"
+            "$value": "{inset.lg} - 2px",
+            "$description": "Vertical padding for large size buttons (14px — TODO: verify visual diff → docelowo {inset.lg})"
           }
         },
         "icon-solo": {
@@ -1728,7 +1728,7 @@
           "normal": {
             "y": {
               "$type": "dimension",
-              "$value": "{inset.sm} - 1",
+              "$value": "{inset.sm} - 1px",
               "$description": "Input field vertical padding for normal size (7px — TODO: verify visual diff → docelowo {inset.sm})"
             },
             "x": {
@@ -1747,7 +1747,7 @@
           "large": {
             "y": {
               "$type": "dimension",
-              "$value": "{inset.md} + 3",
+              "$value": "{inset.md} + 3px",
               "$description": "Input field vertical padding for large size (15px — TODO: verify visual diff → docelowo {inset.md})"
             },
             "x": {

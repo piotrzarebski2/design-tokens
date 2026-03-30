@@ -1248,6 +1248,11 @@
     "lg": {
       "$type": "dimension",
       "$value": "16px"
+    },
+    "full": {
+      "$type": "dimension",
+      "$value": "9999px",
+      "$description": "Pill / fully rounded — avatars, status-pills, pagination dots"
     }
   },
   "border": {
@@ -1259,6 +1264,33 @@
       "2": {
         "$type": "dimension",
         "$value": "2px"
+      }
+    },
+    "default": {
+      "$type": "dimension",
+      "$value": "{border.width.1}",
+      "$description": "Standard border width — 1px"
+    },
+    "big": {
+      "$type": "dimension",
+      "$value": "{border.width.2}",
+      "$description": "Focus / emphasis border width — 2px"
+    },
+    "radius": {
+      "default": {
+        "$type": "dimension",
+        "$value": "{radius.sm}",
+        "$description": "Default component radius — 8px (inputs, buttons, cards)"
+      },
+      "big": {
+        "$type": "dimension",
+        "$value": "{radius.lg}",
+        "$description": "Large radius — 16px (switch track)"
+      },
+      "full": {
+        "$type": "dimension",
+        "$value": "{radius.full}",
+        "$description": "Pill shape — avatars, status-pills, pagination dots"
       }
     }
   },
