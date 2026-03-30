@@ -1334,12 +1334,12 @@
       "height": {
         "normal": {
           "$type": "dimension",
-          "$value": "{size.control.normal}",
+          "$value": "{size.control.md}",
           "$description": "Button height for normal size (32px)"
         },
         "large": {
           "$type": "dimension",
-          "$value": "{size.control.large}",
+          "$value": "{size.control.lg}",
           "$description": "Button height for large size (48px)"
         }
       }
@@ -1512,7 +1512,7 @@
       "normal": {
         "height": {
           "$type": "dimension",
-          "$value": "{size.control.normal}",
+          "$value": "{size.control.md}",
           "$description": "Button expander height for normal size (32px)"
         },
         "padding": {
@@ -1524,7 +1524,7 @@
       "large": {
         "height": {
           "$type": "dimension",
-          "$value": "{size.control.large}",
+          "$value": "{size.control.lg}",
           "$description": "Button expander height for large size (48px)"
         },
         "padding": {
@@ -2107,12 +2107,12 @@
       "size": {
         "width": {
           "$type": "dimension",
-          "$value": "{size.control.small} + {space.3}",
+          "$value": "{size.1} + {space.3}",
           "$description": "Switch width (16px + 12px = 28px)"
         },
         "height": {
           "$type": "dimension",
-          "$value": "{size.control.small}",
+          "$value": "{size.1}",
           "$description": "Switch height (16px)"
         },
         "handle": {
@@ -2841,12 +2841,12 @@
       },
       "large": {
         "$type": "dimension",
-        "$value": "{space.20}",
+        "$value": "{size.7}",
         "$description": "Large avatar size (84px)"
       },
       "xlarge": {
         "$type": "dimension",
-        "$value": "{space.32}",
+        "$value": "{size.8}",
         "$description": "Extra large avatar size (128px)"
       }
     },
@@ -3098,7 +3098,7 @@
         "separator": {
           "width": {
             "$type": "dimension",
-            "$value": "{space.025}",
+            "$value": "{border.default}",
             "$description": "Navigation separator width (1px)"
           },
           "height": {
@@ -3279,12 +3279,12 @@
       "separator": {
         "width": {
           "$type": "dimension",
-          "$value": "{space.025}",
+          "$value": "{border.default}",
           "$description": "Separator width (1px)"
         },
         "height": {
           "$type": "dimension",
-          "$value": "{space.6}",
+          "$value": "{size.1}",
           "$description": "Separator height (24px)"
         },
         "color": {
@@ -3346,12 +3346,12 @@
       "separator": {
         "width": {
           "$type": "dimension",
-          "$value": "{space.025}",
+          "$value": "{border.default}",
           "$description": "Separator width (1px)"
         },
         "height": {
           "$type": "dimension",
-          "$value": "{space.6}",
+          "$value": "{size.1}",
           "$description": "Separator height (24px)"
         },
         "color": {
@@ -3553,7 +3553,7 @@
       "separator": {
         "height": {
           "$type": "dimension",
-          "$value": "{space.025}",
+          "$value": "{border.default}",
           "$description": "Header separator height (1px)"
         },
         "color": {
@@ -3976,7 +3976,7 @@
       "border": {
         "width": {
           "$type": "dimension",
-          "$value": "{space.025}",
+          "$value": "{border.default}",
           "$description": "App menu border width (1px)"
         },
         "color": {
@@ -4008,7 +4008,7 @@
     "expanded": {
       "width": {
         "$type": "dimension",
-        "$value": "{space.32}",
+        "$value": "{size.8}",
         "$description": "Expanded menu width (262px = 128px * 2 + 6px)"
       },
       "padding": {
@@ -4032,7 +4032,7 @@
     "separator": {
       "height": {
         "$type": "dimension",
-        "$value": "{space.025}",
+        "$value": "{border.default}",
         "$description": "Separator height (1px)"
       },
       "color": {
@@ -4404,7 +4404,7 @@
     "item": {
       "size": {
         "$type": "dimension",
-        "$value": "{size.control.normal}",
+        "$value": "{size.control.md}",
         "$description": "Pagination item size (32px circular button)"
       },
       "border": {

@@ -1116,7 +1116,18 @@
     "4": { "$type": "dimension", "$value": "48px",  "$description": "Large button, dropdown footer" },
     "5": { "$type": "dimension", "$value": "56px",  "$description": "Navbar, large list item" },
     "6": { "$type": "dimension", "$value": "64px",  "$description": "App menu zone" },
-    "7": { "$type": "dimension", "$value": "80px",  "$description": "Page header area" }
+    "7": { "$type": "dimension", "$value": "80px",  "$description": "Page header area" },
+    "8": { "$type": "dimension", "$value": "128px", "$description": "XLarge — avatar xlarge, wide panel" },
+    "control": {
+      "sm": { "$type": "dimension", "$value": "32px", "$description": "Compact control height — compact list item, nav item" },
+      "md": { "$type": "dimension", "$value": "40px", "$description": "Normal control height — standard input, button" },
+      "lg": { "$type": "dimension", "$value": "48px", "$description": "Large control height — large button, dropdown footer" }
+    },
+    "icon": {
+      "sm": { "$type": "dimension", "$value": "16px", "$description": "Small icon — breadcrumb, helper text" },
+      "md": { "$type": "dimension", "$value": "20px", "$description": "Medium icon" },
+      "lg": { "$type": "dimension", "$value": "24px", "$description": "Standard icon — most UI contexts" }
+    }
   },
   "fontFamily": {
     "primary": {
@@ -1214,22 +1225,6 @@
     "wide": {
       "$type": "letterSpacing",
       "$value": "0.05px"
-    }
-  },
-  "size": {
-    "control": {
-      "sm": {
-        "$type": "dimension",
-        "$value": "32px"
-      },
-      "md": {
-        "$type": "dimension",
-        "$value": "40px"
-      },
-      "lg": {
-        "$type": "dimension",
-        "$value": "48px"
-      }
     }
   },
   "radius": {
