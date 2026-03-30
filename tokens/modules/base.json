@@ -1348,12 +1348,12 @@
       "gap": {
         "default": {
           "$type": "dimension",
-          "$value": "{spacing.gap.xs}",
+          "$value": "{inline.sm}",
           "$description": "Default gap between button content elements (8px)"
         },
         "two-icons": {
           "$type": "dimension",
-          "$value": "{spacing.gap.xxs}",
+          "$value": "{inline.xs}",
           "$description": "Gap between elements in two-icons button variant (4px)"
         }
       },
@@ -1361,48 +1361,48 @@
         "normal": {
           "x": {
             "$type": "dimension",
-            "$value": "{spacing.padding.xs}",
+            "$value": "{inset.md}",
             "$description": "Horizontal padding for normal size buttons (12px)"
           },
           "y": {
             "$type": "dimension",
-            "$value": "{spacing.padding.xs}-1px",
-            "$description": "Vertical padding for normal size buttons (7px)"
+            "$value": "{inset.md} - 1",
+            "$description": "Vertical padding for normal size buttons (7px — TODO: verify visual diff → docelowo {inset.md})"
           }
         },
         "large": {
           "x": {
             "$type": "dimension",
-            "$value": "{spacing.padding.md}",
+            "$value": "{inset.lg}",
             "$description": "Horizontal padding for large size buttons (16px)"
           },
           "y": {
             "$type": "dimension",
-            "$value": "{spacing.padding.sm}",
-            "$description": "Vertical padding for large size buttons (14px)"
+            "$value": "{inset.md} - 2",
+            "$description": "Vertical padding for large size buttons (14px — TODO: verify visual diff → docelowo {inset.md})"
           }
         },
         "icon-solo": {
           "normal": {
             "$type": "dimension",
-            "$value": "{spacing.padding.xxs}",
+            "$value": "{inset.xs}",
             "$description": "Padding for normal size icon-only buttons (4px all sides)"
           },
           "large": {
             "$type": "dimension",
-            "$value": "{spacing.padding.xs}",
+            "$value": "{inset.md}",
             "$description": "Padding for large size icon-only buttons (12px all sides)"
           }
         },
         "two-icons": {
           "x": {
             "$type": "dimension",
-            "$value": "{spacing.gap.xs}",
+            "$value": "{inset.sm}",
             "$description": "Horizontal padding for two-icons button variant (8px)"
           },
           "y": {
             "$type": "dimension",
-            "$value": "{spacing.padding.xxs}",
+            "$value": "{inset.xs}",
             "$description": "Vertical padding for two-icons button variant (4px)"
           }
         }
@@ -1529,7 +1529,7 @@
         },
         "padding": {
           "$type": "dimension",
-          "$value": "{spacing.padding.xxs}",
+          "$value": "{inset.xs}",
           "$description": "Button expander padding for large size (4px all sides)"
         }
       }
@@ -1728,18 +1728,18 @@
           "normal": {
             "y": {
               "$type": "dimension",
-              "$value": "{spacing.padding.xs}",
-              "$description": "Input field vertical padding for normal size (7px)"
+              "$value": "{inset.sm} - 1",
+              "$description": "Input field vertical padding for normal size (7px — TODO: verify visual diff → docelowo {inset.sm})"
             },
             "x": {
               "left": {
                 "$type": "dimension",
-                "$value": "{spacing.padding.sm}",
+                "$value": "{inset.md}",
                 "$description": "Input field left padding (12px)"
               },
               "right": {
                 "$type": "dimension",
-                "$value": "{spacing.padding.xs}",
+                "$value": "{inset.sm}",
                 "$description": "Input field right padding (8px)"
               }
             }
@@ -1747,18 +1747,18 @@
           "large": {
             "y": {
               "$type": "dimension",
-              "$value": "{spacing.padding.sm}",
-              "$description": "Input field vertical padding for large size (15px)"
+              "$value": "{inset.md} + 3",
+              "$description": "Input field vertical padding for large size (15px — TODO: verify visual diff → docelowo {inset.md})"
             },
             "x": {
               "left": {
                 "$type": "dimension",
-                "$value": "{spacing.padding.sm}",
+                "$value": "{inset.md}",
                 "$description": "Input field left padding (12px)"
               },
               "right": {
                 "$type": "dimension",
-                "$value": "{spacing.padding.xs}",
+                "$value": "{inset.sm}",
                 "$description": "Input field right padding (8px)"
               }
             }
@@ -1768,18 +1768,18 @@
           "normal": {
             "y": {
               "$type": "dimension",
-              "$value": "{spacing.padding.xxs}",
+              "$value": "{inset.xs}",
               "$description": "Select field vertical padding for normal size (4px)"
             },
             "x": {
               "left": {
                 "$type": "dimension",
-                "$value": "{spacing.padding.sm}",
+                "$value": "{inset.md}",
                 "$description": "Select field left padding (12px)"
               },
               "right": {
                 "$type": "dimension",
-                "$value": "{spacing.padding.xs}",
+                "$value": "{inset.sm}",
                 "$description": "Select field right padding (8px)"
               }
             }
@@ -1789,18 +1789,18 @@
           "normal": {
             "y": {
               "$type": "dimension",
-              "$value": "{spacing.padding.xs}",
+              "$value": "{inset.sm}",
               "$description": "Textarea field vertical padding for normal size (8px)"
             },
             "x": {
               "left": {
                 "$type": "dimension",
-                "$value": "{spacing.padding.sm}",
+                "$value": "{inset.md}",
                 "$description": "Textarea field left padding (12px)"
               },
               "right": {
                 "$type": "dimension",
-                "$value": "{spacing.padding.sm}",
+                "$value": "{inset.md}",
                 "$description": "Textarea field right padding (12px)"
               }
             }
@@ -1847,7 +1847,7 @@
     "gap": {
       "default": {
         "$type": "dimension",
-        "$value": "{spacing.gap.xs}",
+        "$value": "{stack.sm}",
         "$description": "Gap between form elements (8px)"
       }
     },
@@ -1923,7 +1923,7 @@
       "content": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.gap.md}",
+          "$value": "{inline.lg}",
           "$description": "Gap between checkbox and content (16px)"
         },
         "padding": {
@@ -2050,7 +2050,7 @@
       "content": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.gap.md}",
+          "$value": "{inline.lg}",
           "$description": "Gap between radio button and content (16px)"
         },
         "padding": {
@@ -2107,7 +2107,7 @@
       "size": {
         "width": {
           "$type": "dimension",
-          "$value": "{size.control.small} + {space.12}",
+          "$value": "{size.control.small} + {space.3}",
           "$description": "Switch width (16px + 12px = 28px)"
         },
         "height": {
@@ -2117,7 +2117,7 @@
         },
         "handle": {
           "$type": "dimension",
-          "$value": "{space.12}",
+          "$value": "{space.3}",
           "$description": "Switch handle size (12px)"
         }
       },
@@ -2177,12 +2177,12 @@
       "content": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.gap.md}",
+          "$value": "{inline.lg}",
           "$description": "Gap between switch and content (16px)"
         },
         "padding": {
           "$type": "dimension",
-          "$value": "{spacing.padding.xxs}",
+          "$value": "{inset.xs}",
           "$description": "Vertical padding for switch with content (4px)"
         }
       },
@@ -2216,7 +2216,7 @@
     "line": {
       "height": {
         "$type": "dimension",
-        "$value": "{space.16}",
+        "$value": "{inset.xs}",
         "$description": "Divider line height (16px)"
       },
       "color": {
@@ -2236,18 +2236,18 @@
       "padding": {
         "horizontal": {
           "$type": "dimension",
-          "$value": "{spacing.padding.sm}",
+          "$value": "{inset.md}",
           "$description": "Divider header horizontal padding (12px)"
         },
         "vertical": {
           "$type": "dimension",
-          "$value": "{spacing.padding.xs}",
+          "$value": "{inset.sm}",
           "$description": "Divider header vertical padding (8px)"
         }
       },
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.gap.xs}",
+        "$value": "{inline.sm}",
         "$description": "Gap between divider elements (8px)"
       },
       "text": {
@@ -2323,12 +2323,12 @@
         "x": {
           "left": {
             "$type": "dimension",
-            "$value": "{space.56}",
-            "$description": "Broadcast bar left padding (56px)"
+            "$value": "{size.1}",
+            "$description": "Broadcast bar left padding (64px)"
           },
           "right": {
             "$type": "dimension",
-            "$value": "{space.16}",
+            "$value": "{inset.lg}",
             "$description": "Broadcast bar right padding (16px)"
           }
         },
@@ -2340,7 +2340,7 @@
       },
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.gap.sm}",
+        "$value": "{inline.lg}",
         "$description": "Gap between broadcast bar elements (16px)"
       }
     },
@@ -2489,24 +2489,24 @@
       "padding": {
         "x": {
           "$type": "dimension",
-          "$value": "{spacing.padding.sm}",
+          "$value": "{inset.lg}",
           "$description": "Toast horizontal padding (16px)"
         },
         "y": {
           "$type": "dimension",
-          "$value": "{spacing.padding.xs}",
+          "$value": "{inset.md}",
           "$description": "Toast vertical padding (12px)"
         }
       },
       "gap": {
         "elements": {
           "$type": "dimension",
-          "$value": "{spacing.gap.xxs}",
-          "$description": "Gap between toast elements (8px)"
+          "$value": "{stack.xs}",
+          "$description": "Gap between toast elements (4px)"
         },
         "text": {
           "$type": "dimension",
-          "$value": "{spacing.gap.sm}",
+          "$value": "{stack.lg}",
           "$description": "Gap between label and description (16px)"
         }
       }
@@ -2688,24 +2688,24 @@
       "padding": {
         "x": {
           "$type": "dimension",
-          "$value": "{spacing.padding.sm}",
+          "$value": "{inset.lg}",
           "$description": "Section message horizontal padding (16px)"
         },
         "y": {
           "$type": "dimension",
-          "$value": "{spacing.padding.xs}",
+          "$value": "{inset.md}",
           "$description": "Section message vertical padding (12px)"
         }
       },
       "gap": {
         "elements": {
           "$type": "dimension",
-          "$value": "{spacing.gap.xxs}",
-          "$description": "Gap between section message elements (8px)"
+          "$value": "{stack.xs}",
+          "$description": "Gap between section message elements (4px)"
         },
         "text": {
           "$type": "dimension",
-          "$value": "{spacing.gap.sm}",
+          "$value": "{stack.lg}",
           "$description": "Gap between header and description (16px)"
         }
       }
@@ -2808,14 +2808,14 @@
     "content": {
       "padding": {
         "$type": "dimension",
-        "$value": "{spacing.padding.lg}",
+        "$value": "{inset.xl}",
         "$description": "Card content padding (24px)"
       }
     },
     "header": {
       "padding": {
         "$type": "dimension",
-        "$value": "{spacing.padding.lg}",
+        "$value": "{inset.xl}",
         "$description": "Card header padding (24px)"
       }
     },
@@ -2831,23 +2831,23 @@
     "size": {
       "small": {
         "$type": "dimension",
-        "$value": "{space.24}",
+        "$value": "{size.1}",
         "$description": "Small avatar size (24px)"
       },
       "medium": {
         "$type": "dimension",
-        "$value": "{space.40}",
+        "$value": "{size.3}",
         "$description": "Medium avatar size (40px)"
       },
       "large": {
         "$type": "dimension",
-        "$value": "{space.84}",
+        "$value": "{space.20}",
         "$description": "Large avatar size (84px)"
       },
       "xlarge": {
         "$type": "dimension",
-        "$value": "{space.120}",
-        "$description": "Extra large avatar size (120px)"
+        "$value": "{space.32}",
+        "$description": "Extra large avatar size (128px)"
       }
     },
     "borderRadius": {
@@ -2925,18 +2925,18 @@
     "size": {
       "height": {
         "$type": "dimension",
-        "$value": "{space.16}",
+        "$value": "{size.1}",
         "$description": "Status pill height (16px)"
       },
       "padding": {
         "horizontal": {
           "$type": "dimension",
-          "$value": "{space.8}",
+          "$value": "{inset.sm}",
           "$description": "Status pill horizontal padding (8px)"
         },
         "vertical": {
           "$type": "dimension",
-          "$value": "{space.1}",
+          "$value": "{space.025}",
           "$description": "Status pill vertical padding (1px)"
         }
       }
@@ -3071,18 +3071,18 @@
       "padding": {
         "horizontal": {
           "$type": "dimension",
-          "$value": "{spacing.padding.lg}",
+          "$value": "{inset.xl}",
           "$description": "Page header horizontal padding (24px)"
         },
         "vertical": {
           "$type": "dimension",
-          "$value": "{spacing.padding.md}",
+          "$value": "{inset.lg}",
           "$description": "Page header vertical padding (16px)"
         }
       },
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.gap.lg}",
+        "$value": "{inline.xl}",
         "$description": "Gap between header elements (24px)"
       }
     },
@@ -3098,12 +3098,12 @@
         "separator": {
           "width": {
             "$type": "dimension",
-            "$value": "{space.1}",
+            "$value": "{space.025}",
             "$description": "Navigation separator width (1px)"
           },
           "height": {
             "$type": "dimension",
-            "$value": "{space.40}",
+            "$value": "{size.3}",
             "$description": "Navigation separator height (40px)"
           },
           "color": {
@@ -3137,7 +3137,7 @@
       "avatar": {
         "size": {
           "$type": "dimension",
-          "$value": "{space.40}",
+          "$value": "{size.3}",
           "$description": "Object avatar size (40px)"
         },
         "bg": {
@@ -3155,7 +3155,7 @@
     "actions": {
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.gap.sm}",
+        "$value": "{inline.lg}",
         "$description": "Gap between action buttons (16px)"
       }
     },
@@ -3164,12 +3164,12 @@
         "padding": {
           "horizontal": {
             "$type": "dimension",
-            "$value": "{spacing.padding.lg}",
+            "$value": "{inset.xl}",
             "$description": "Tabs container horizontal padding (24px)"
           },
           "vertical": {
             "$type": "dimension",
-            "$value": "{space.1}",
+            "$value": "{space.025}",
             "$description": "Tabs container vertical padding (1px)"
           }
         },
@@ -3195,18 +3195,18 @@
           },
           "vertical": {
             "$type": "dimension",
-            "$value": "{space.2}",
+            "$value": "{space.05}",
             "$description": "Tab item vertical padding (2px)"
           },
           "bottom": {
             "$type": "dimension",
-            "$value": "{space.12}",
+            "$value": "{inset.md}",
             "$description": "Tab item bottom padding (12px)"
           }
         },
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.gap.lg}",
+          "$value": "{inline.xl}",
           "$description": "Gap between tab items (24px)"
         },
         "typography": {
@@ -3253,12 +3253,12 @@
       "padding": {
         "horizontal": {
           "$type": "dimension",
-          "$value": "{spacing.padding.lg}",
+          "$value": "{inset.xl}",
           "$description": "Navbar horizontal padding (24px)"
         },
         "vertical": {
           "$type": "dimension",
-          "$value": "{spacing.padding.md}",
+          "$value": "{inset.md}",
           "$description": "Navbar vertical padding (12px)"
         }
       }
@@ -3266,25 +3266,25 @@
     "left": {
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.gap.sm}",
+        "$value": "{inline.md}",
         "$description": "Gap between left side elements (12px)"
       },
       "logo": {
         "height": {
           "$type": "dimension",
-          "$value": "{space.14}",
+          "$value": "{space.3}",
           "$description": "Logo height (14px)"
         }
       },
       "separator": {
         "width": {
           "$type": "dimension",
-          "$value": "{space.1}",
+          "$value": "{space.025}",
           "$description": "Separator width (1px)"
         },
         "height": {
           "$type": "dimension",
-          "$value": "{space.24}",
+          "$value": "{space.6}",
           "$description": "Separator height (24px)"
         },
         "color": {
@@ -3314,19 +3314,19 @@
     "right": {
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.gap.sm}",
+        "$value": "{inline.md}",
         "$description": "Gap between right side elements (12px)"
       },
       "actions": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.gap.sm}",
+          "$value": "{inline.md}",
           "$description": "Gap between action buttons (12px)"
         },
         "button": {
           "padding": {
             "$type": "dimension",
-            "$value": "{spacing.padding.xxs}",
+            "$value": "{inset.xs}",
             "$description": "Action button padding (4px)"
           },
           "borderRadius": {
@@ -3346,12 +3346,12 @@
       "separator": {
         "width": {
           "$type": "dimension",
-          "$value": "{space.1}",
+          "$value": "{space.025}",
           "$description": "Separator width (1px)"
         },
         "height": {
           "$type": "dimension",
-          "$value": "{space.24}",
+          "$value": "{space.6}",
           "$description": "Separator height (24px)"
         },
         "color": {
@@ -3370,18 +3370,18 @@
           "horizontal": {
             "left": {
               "$type": "dimension",
-              "$value": "{spacing.padding.sm}",
-              "$description": "User button left padding (12px)"
+              "$value": "{inset.sm}",
+              "$description": "User button left padding (8px)"
             },
             "right": {
               "$type": "dimension",
-              "$value": "{space.8}",
+              "$value": "{inset.sm}",
               "$description": "User button right padding (8px)"
             }
           },
           "vertical": {
             "$type": "dimension",
-            "$value": "{space.4}",
+            "$value": "{inset.xs}",
             "$description": "User button vertical padding (4px)"
           }
         },
@@ -3392,7 +3392,7 @@
         },
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.gap.xxs}",
+          "$value": "{inline.xs}",
           "$description": "Gap between text and icon (4px)"
         },
         "text": {
@@ -3486,18 +3486,18 @@
       "padding": {
         "horizontal": {
           "$type": "dimension",
-          "$value": "{spacing.padding.lg}",
+          "$value": "{inset.xl}",
           "$description": "Modal header horizontal padding (24px)"
         },
         "vertical": {
           "$type": "dimension",
-          "$value": "{spacing.padding.md}",
-          "$description": "Modal header vertical padding (16px)"
+          "$value": "{space.5}",
+          "$description": "Modal header vertical padding (20px)"
         }
       },
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.gap.sm}",
+        "$value": "{inline.md}",
         "$description": "Gap between header elements (12px)"
       },
       "border": {
@@ -3527,13 +3527,13 @@
       "actions": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.gap.sm}",
+          "$value": "{inline.md}",
           "$description": "Gap between action buttons (12px)"
         },
         "button": {
           "padding": {
             "$type": "dimension",
-            "$value": "{spacing.padding.xxs}",
+            "$value": "{inset.xs}",
             "$description": "Action button padding (4px)"
           },
           "borderRadius": {
@@ -3553,7 +3553,7 @@
       "separator": {
         "height": {
           "$type": "dimension",
-          "$value": "{space.1}",
+          "$value": "{space.025}",
           "$description": "Header separator height (1px)"
         },
         "color": {
@@ -3583,12 +3583,12 @@
       },
       "padding": {
         "$type": "dimension",
-        "$value": "{spacing.padding.lg}",
+        "$value": "{inset.xl}",
         "$description": "Modal footer padding (24px)"
       },
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.gap.sm}",
+        "$value": "{inline.md}",
         "$description": "Gap between footer elements (12px)"
       },
       "border": {
@@ -3606,7 +3606,7 @@
       "actions": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.gap.sm}",
+          "$value": "{inline.md}",
           "$description": "Gap between footer action buttons (12px)"
         }
       }
@@ -3623,18 +3623,18 @@
       "padding": {
         "horizontal": {
           "$type": "dimension",
-          "$value": "{spacing.padding.xs}",
-          "$description": "List item horizontal padding (8px)"
+          "$value": "{inset.md}",
+          "$description": "List item horizontal padding (12px)"
         },
         "vertical": {
           "$type": "dimension",
-          "$value": "{spacing.padding.xxs}",
+          "$value": "{inset.xs}",
           "$description": "List item vertical padding (4px)"
         }
       },
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.gap.sm}",
+        "$value": "{inline.md}",
         "$description": "Gap between list item elements (12px)"
       },
       "borderRadius": {
@@ -3645,23 +3645,23 @@
       "height": {
         "standard": {
           "$type": "dimension",
-          "$value": "{space.32}",
+          "$value": "{size.2}",
           "$description": "Standard list item height (32px)"
         },
         "withAvatar": {
           "$type": "dimension",
-          "$value": "{space.44}",
+          "$value": "{size.3}",
           "$description": "List item height with small avatar (44px)"
         },
         "withAvatarLarge": {
           "$type": "dimension",
-          "$value": "{space.56}",
+          "$value": "{size.4}",
           "$description": "List item height with medium avatar (56px)"
         },
         "withDescription": {
           "$type": "dimension",
-          "$value": "{space.52}",
-          "$description": "List item height with description (52px)"
+          "$value": "{space.12}",
+          "$description": "List item height with description (48px)"
         }
       }
     },
@@ -3976,7 +3976,7 @@
       "border": {
         "width": {
           "$type": "dimension",
-          "$value": "{space.1}",
+          "$value": "{space.025}",
           "$description": "App menu border width (1px)"
         },
         "color": {
@@ -3990,37 +3990,37 @@
       "padding": {
         "horizontal": {
           "$type": "dimension",
-          "$value": "{spacing.padding.sm}",
+          "$value": "{inset.md}",
           "$description": "Collapsed menu horizontal padding (12px)"
         },
         "vertical": {
           "$type": "dimension",
-          "$value": "{spacing.padding.md}",
+          "$value": "{inset.xl}",
           "$description": "Collapsed menu vertical padding (24px)"
         }
       },
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.gap.lg}",
+        "$value": "{stack.xl}",
         "$description": "Gap between collapsed menu elements (24px)"
       }
     },
     "expanded": {
       "width": {
         "$type": "dimension",
-        "$value": "{space.128} * 2 + {space.6}",
+        "$value": "{space.32}",
         "$description": "Expanded menu width (262px = 128px * 2 + 6px)"
       },
       "padding": {
         "$type": "dimension",
-        "$value": "{spacing.padding.xs}",
+        "$value": "{inset.sm}",
         "$description": "Expanded menu padding (8px)"
       }
     },
     "icons": {
       "size": {
         "$type": "dimension",
-        "$value": "{space.40}",
+        "$value": "{size.3}",
         "$description": "Menu icon size (40px)"
       },
       "borderRadius": {
@@ -4032,7 +4032,7 @@
     "separator": {
       "height": {
         "$type": "dimension",
-        "$value": "{space.1}",
+        "$value": "{space.025}",
         "$description": "Separator height (1px)"
       },
       "color": {
@@ -4045,12 +4045,12 @@
       "padding": {
         "horizontal": {
           "$type": "dimension",
-          "$value": "{spacing.padding.xs}",
+          "$value": "{inset.sm}",
           "$description": "Header horizontal padding (8px)"
         },
         "vertical": {
           "$type": "dimension",
-          "$value": "{space.26}",
+          "$value": "{inset.xl}",
           "$description": "Header vertical padding (26px)"
         }
       },
@@ -4116,6 +4116,11 @@
     }
   },
   "stepper": {
+    "padding": {
+      "$type": "dimension",
+      "$value": "{inset.lg}",
+      "$description": "Stepper container padding (16px)"
+    },
     "step": {
       "circle": {
         "border": {
@@ -4537,11 +4542,21 @@
     },
     "gap": {
       "$type": "dimension",
-      "$value": "{spacing.gap.xxs}",
+      "$value": "{inline.xs}",
       "$description": "Gap between pagination items (4px)"
+    },
+    "padding": {
+      "$type": "dimension",
+      "$value": "{inset.md}",
+      "$description": "Pagination item padding (12px)"
     }
   },
   "progressbar": {
+    "height": {
+      "$type": "dimension",
+      "$value": "{size.1}",
+      "$description": "Progressbar component height (24px)"
+    },
     "header": {
       "label": {
         "color": {
@@ -4597,14 +4612,14 @@
       },
       "paddingY": {
         "$type": "dimension",
-        "$value": "{spacing.gap.xs}",
+        "$value": "{inset.sm}",
         "$description": "Vertical padding around progressbar bar (8px)"
       }
     },
     "inline": {
       "gap": {
         "$type": "dimension",
-        "$value": "{spacing.gap.xs}",
+        "$value": "{inline.sm}",
         "$description": "Gap between inline progressbar bar and value text (8px)"
       }
     }

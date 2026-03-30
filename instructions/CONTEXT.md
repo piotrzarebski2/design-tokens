@@ -36,9 +36,15 @@ PRIMITIVES  →  SEMANTIC  →  MODULE (aplikujemy na produkt)
 Surowe wartości zorganizowane w skale. Opisują **CO to jest**.
 
 ```
-color.{kolor}.{skala}
-→ color.blue.600 = #0b68ff
+color.{kolor}.{skala}       → color.blue.600 = #0b68ff
+space.{mnożnik}             → space.6 = 24px  (6 × 4px)
+size.{n}                    → size.5 = 56px   (navbar height)
 ```
+
+**Spacing (odległości):**
+- `space.{mnożnik}` — jednostka 4px. Nazwa = mnożnik: `space.6` = 6×4 = 24px
+- `space.025` = 1px, `space.05` = 2px — micro, wyłącznie separatory/bordery
+- `size.{n}` — wysokości komponentów: `size.1`=24px … `size.7`=80px
 
 **Paleta kolorów:**
 - `color.blue.*` (50–900) — brand, główna akcja
@@ -56,7 +62,15 @@ color.{kolor}.{skala}
 ---
 
 ### Warstwa 2: Semantic
-Tokeny z **znaczeniem i przeznaczeniem**. Zmieniają się między light/dark mode.
+Tokeny z **znaczeniem i przeznaczeniem**.
+Kolory zmieniają się między light/dark mode. Spacing jest niezależny od motywu.
+
+**Spacing semantic (t-shirt):**
+- `inset.{xs|sm|md|lg|xl|2xl}` — padding kontenera (uniform, wszystkie strony równe)
+- `stack.{xs|sm|md|lg|xl|2xl}` — gap pionowy (flex column, grid row-gap)
+- `inline.{xs|sm|md|lg|xl}` — gap poziomy (flex row, grid column-gap)
+- Padding nieuniformowy (X ≠ Y) → **dwa osobne tokeny** w module: `padding.x` + `padding.y`
+- Elementy z `height: {size.*}` → **nie używają padding-y**, centrują przez `align-items: center`
 
 ```
 color.{property}.{category}.{modifier}{State}
@@ -142,6 +156,17 @@ avatar.border.color.{default|hover|disabled}
 avatar.disabled.opacity
 ```
 
+### Form — Radio
+```
+form.radio.size
+form.radio.border.radius / border.width.{default|focused} / border.color.{default|hover|selected}
+form.radio.bg.{default|selected|selectedDisabled}
+form.radio.dot.color
+form.radio.content.gap / content.padding.{default|solo}
+form.radio.text.label.{default|hover|selected|disabled} / text.description
+form.radio.disabled.opacity
+```
+
 ### Status Pill
 ```
 status-pill.size.height
@@ -167,6 +192,7 @@ design-tokens/
 │   ├── semantic/
 │   │   ├── Light.json               ← tokeny semantyczne — tryb jasny
 │   │   ├── Dark.json                ← tokeny semantyczne — tryb ciemny
+│   │   ├── spacing.json             ← tokeny semantyczne spacing (inset/stack/inline)
 │   │   └── custom-color/            ← semantic per kolor (blue, grey, red, green, yellow…)
 │   │       └── *.json
 │   ├── surface/
@@ -180,10 +206,12 @@ design-tokens/
 │   ├── 03-nazewnictwo.md
 │   ├── 04-kolory.md
 │   ├── 05-tokeny-modulowe.md
-│   └── 06-wyszukiwanie-i-tworzenie-tokenow.md
+│   ├── 06-wyszukiwanie-i-tworzenie-tokenow.md
+│   └── 07-tokeny-odleglosci.md
 └── instructions/                    ← instrukcje dla Claude
     ├── CONTEXT.md                   ← ten plik
-    └── workflow-color-analysis.md
+    ├── workflow-color-analysis.md
+    └── workflow-spacing-migration.md ← migracja tokenów spacing
 ```
 
 ---
@@ -194,13 +222,15 @@ design-tokens/
 - Architektura 3-warstwowa (primitives → semantic → module)
 - Konwencja nazewnictwa tokenów kolorystycznych
 - Tokeny modułowe: Buttons, Avatar, Status Pill
-- Dokumentacja (docs 01–06)
+- Dokumentacja (docs 01–07)
 - Tokeny achromatyczne (`achromatic.max/min`)
+- **Architektura tokenów spacing** — skala `space.*` (mnożnik ×4), `size.*` (wysokości komponentów), semantic `inset/stack/inline` (t-shirt)
+- **Migracja spacing w modules/base.json** — wszystkie komponenty używają nowych tokenów `inset/stack/inline/size` zamiast `space.*` bezpośrednio
 
 ### 🚧 W toku / do zrobienia
 1. **Analiza tokenów kolorystycznych vs Figma** — komponent po komponencie, walidacja poprawności wartości i referencji
-2. **Tokeny surface** — powtarzające się schematy kolorystyczne dla surface zebrać w jeden blok tokenów (zamiast każdy moduł aplikuje od zera)
-3. **Tokeny odległościowe** (spacing, padding) — wymagają przeprojektowania od podstaw; poprzednie podejście przerwane; nowe podejście do ustalenia na podstawie Figmy
+2. **Tokeny surface** — powtarzające się schematy kolorystyczne dla surface zebrać w jeden blok tokenów
+3. **Tokenizacja pozostałych komponentów** — nowe komponenty form (radio ✅, checkbox, switch) do zweryfikowania i uzupełnienia w Figmie
 
 ---
 
