@@ -1334,12 +1334,12 @@
       "height": {
         "normal": {
           "$type": "dimension",
-          "$value": "{size.control.md}",
+          "$value": "{size.md}",
           "$description": "Button height for normal size (32px)"
         },
         "large": {
           "$type": "dimension",
-          "$value": "{size.control.lg}",
+          "$value": "{size.lg}",
           "$description": "Button height for large size (48px)"
         }
       }
@@ -1411,12 +1411,12 @@
     "border": {
       "width": {
         "$type": "dimension",
-        "$value": "{border.default}",
+        "$value": "{border.width.default}",
         "$description": "Default border width for buttons (1px)"
       },
       "radius": {
         "$type": "dimension",
-        "$value": "{border.radius.default}",
+        "$value": "{border.radius.sm}",
         "$description": "Border radius for buttons (3px)"
       }
     },
@@ -1512,7 +1512,7 @@
       "normal": {
         "height": {
           "$type": "dimension",
-          "$value": "{size.control.md}",
+          "$value": "{size.md}",
           "$description": "Button expander height for normal size (32px)"
         },
         "padding": {
@@ -1524,7 +1524,7 @@
       "large": {
         "height": {
           "$type": "dimension",
-          "$value": "{size.control.lg}",
+          "$value": "{size.lg}",
           "$description": "Button expander height for large size (48px)"
         },
         "padding": {
@@ -1537,7 +1537,7 @@
     "border": {
       "width": {
         "$type": "dimension",
-        "$value": "{border.default}",
+        "$value": "{border.width.default}",
         "$description": "Button expander border width"
       },
       "radius": {
@@ -1703,23 +1703,23 @@
       },
       "borderRadius": {
         "$type": "dimension",
-        "$value": "{border.radius.default}",
+        "$value": "{border.radius.sm}",
         "$description": "Form field border radius (3px)"
       },
       "borderWidth": {
         "default": {
           "$type": "dimension",
-          "$value": "{border.default}",
+          "$value": "{border.width.default}",
           "$description": "Form field border width for default state (1px)"
         },
         "focus": {
           "$type": "dimension",
-          "$value": "{border.default}",
+          "$value": "{border.width.default}",
           "$description": "Form field border width for focus state (2px)"
         },
         "validated": {
           "$type": "dimension",
-          "$value": "{border.default}",
+          "$value": "{border.width.default}",
           "$description": "Form field border width for validated/error state (2px)"
         }
       },
@@ -1860,18 +1860,18 @@
       "border": {
         "radius": {
           "$type": "dimension",
-          "$value": "{border.radius.default}",
+          "$value": "{border.radius.sm}",
           "$description": "Checkbox border radius (3px)"
         },
         "width": {
           "default": {
             "$type": "dimension",
-            "$value": "{border.default}",
+            "$value": "{border.width.default}",
             "$description": "Checkbox border width for default state (1px)"
           },
           "focused": {
             "$type": "dimension",
-            "$value": "{border.big}",
+            "$value": "{border.width.focus}",
             "$description": "Checkbox border width for focused state (2px)"
           }
         },
@@ -1996,12 +1996,12 @@
         "width": {
           "default": {
             "$type": "dimension",
-            "$value": "{border.default}",
+            "$value": "{border.width.default}",
             "$description": "Radio button border width for default state (1px)"
           },
           "focused": {
             "$type": "dimension",
-            "$value": "{border.big}",
+            "$value": "{border.width.focus}",
             "$description": "Radio button border width for focused state (2px)"
           }
         },
@@ -2107,12 +2107,12 @@
       "size": {
         "width": {
           "$type": "dimension",
-          "$value": "{size.1} + {space.3}",
+          "$value": "{size.xs} + {space.3}",
           "$description": "Switch width (16px + 12px = 28px)"
         },
         "height": {
           "$type": "dimension",
-          "$value": "{size.1}",
+          "$value": "{size.xs}",
           "$description": "Switch height (16px)"
         },
         "handle": {
@@ -2124,7 +2124,7 @@
       "border": {
         "radius": {
           "$type": "dimension",
-          "$value": "{border.radius.big}",
+          "$value": "{border.radius.lg}",
           "$description": "Switch border radius (8px)"
         }
       },
@@ -2323,7 +2323,7 @@
         "x": {
           "left": {
             "$type": "dimension",
-            "$value": "{size.1}",
+            "$value": "{size.xs}",
             "$description": "Broadcast bar left padding (64px)"
           },
           "right": {
@@ -2536,7 +2536,7 @@
     },
     "borderRadius": {
       "$type": "dimension",
-      "$value": "{border.radius.default}",
+      "$value": "{border.radius.sm}",
       "$description": "Toast border radius (3px)"
     },
     "shadow": {
@@ -2736,18 +2736,18 @@
     "border": {
       "radius": {
         "$type": "dimension",
-        "$value": "{border.radius.default}",
+        "$value": "{border.radius.sm}",
         "$description": "Section message border radius (3px)"
       },
       "width": {
         "default": {
           "$type": "dimension",
-          "$value": "{border.default}",
+          "$value": "{border.width.default}",
           "$description": "Section message border width (1px)"
         },
         "top": {
           "$type": "dimension",
-          "$value": "{border.big}",
+          "$value": "{border.width.focus}",
           "$description": "Section message top border width (2px)"
         }
       }
@@ -2779,7 +2779,7 @@
     "border": {
       "radius": {
         "$type": "dimension",
-        "$value": "{border.radius.default}",
+        "$value": "{border.radius.sm}",
         "$description": "Card border radius (3px)"
       },
       "width": {
@@ -2831,22 +2831,22 @@
     "size": {
       "small": {
         "$type": "dimension",
-        "$value": "{size.1}",
+        "$value": "{size.xs}",
         "$description": "Small avatar size (24px)"
       },
       "medium": {
         "$type": "dimension",
-        "$value": "{size.3}",
+        "$value": "{size.md}",
         "$description": "Medium avatar size (40px)"
       },
       "large": {
         "$type": "dimension",
-        "$value": "{size.7}",
+        "$value": "{size.3xl}",
         "$description": "Large avatar size (84px)"
       },
       "xlarge": {
         "$type": "dimension",
-        "$value": "{size.8}",
+        "$value": "{size.4xl}",
         "$description": "Extra large avatar size (128px)"
       }
     },
@@ -2857,7 +2857,7 @@
     },
     "borderWidth": {
       "$type": "dimension",
-      "$value": "{border.default}",
+      "$value": "{border.width.default}",
       "$description": "Avatar border width (1px)"
     },
     "bg": {
@@ -2925,7 +2925,7 @@
     "size": {
       "height": {
         "$type": "dimension",
-        "$value": "{size.1}",
+        "$value": "{size.xs}",
         "$description": "Status pill height (16px)"
       },
       "padding": {
@@ -2948,7 +2948,7 @@
     },
     "borderWidth": {
       "$type": "dimension",
-      "$value": "{border.default}",
+      "$value": "{border.width.default}",
       "$description": "Status pill border width (1px)"
     },
     "typography": {
@@ -3098,12 +3098,12 @@
         "separator": {
           "width": {
             "$type": "dimension",
-            "$value": "{border.default}",
+            "$value": "{border.width.default}",
             "$description": "Navigation separator width (1px)"
           },
           "height": {
             "$type": "dimension",
-            "$value": "{size.3}",
+            "$value": "{size.md}",
             "$description": "Navigation separator height (40px)"
           },
           "color": {
@@ -3137,7 +3137,7 @@
       "avatar": {
         "size": {
           "$type": "dimension",
-          "$value": "{size.3}",
+          "$value": "{size.md}",
           "$description": "Object avatar size (40px)"
         },
         "bg": {
@@ -3176,7 +3176,7 @@
         "border": {
           "width": {
             "$type": "dimension",
-            "$value": "{border.default}",
+            "$value": "{border.width.default}",
             "$description": "Tabs container border width (1px)"
           },
           "color": {
@@ -3279,12 +3279,12 @@
       "separator": {
         "width": {
           "$type": "dimension",
-          "$value": "{border.default}",
+          "$value": "{border.width.default}",
           "$description": "Separator width (1px)"
         },
         "height": {
           "$type": "dimension",
-          "$value": "{size.1}",
+          "$value": "{size.xs}",
           "$description": "Separator height (24px)"
         },
         "color": {
@@ -3331,7 +3331,7 @@
           },
           "borderRadius": {
             "$type": "dimension",
-            "$value": "{border.radius.default}",
+            "$value": "{border.radius.sm}",
             "$description": "Action button border radius (3px)"
           },
           "icon": {
@@ -3346,12 +3346,12 @@
       "separator": {
         "width": {
           "$type": "dimension",
-          "$value": "{border.default}",
+          "$value": "{border.width.default}",
           "$description": "Separator width (1px)"
         },
         "height": {
           "$type": "dimension",
-          "$value": "{size.1}",
+          "$value": "{size.xs}",
           "$description": "Separator height (24px)"
         },
         "color": {
@@ -3387,7 +3387,7 @@
         },
         "borderRadius": {
           "$type": "dimension",
-          "$value": "{border.radius.default}",
+          "$value": "{border.radius.sm}",
           "$description": "User button border radius (3px)"
         },
         "gap": {
@@ -3443,7 +3443,7 @@
       },
       "borderRadius": {
         "$type": "dimension",
-        "$value": "{border.radius.default}",
+        "$value": "{border.radius.sm}",
         "$description": "Modal border radius (3px)"
       }
     },
@@ -3503,7 +3503,7 @@
       "border": {
         "width": {
           "$type": "dimension",
-          "$value": "{border.default}",
+          "$value": "{border.width.default}",
           "$description": "Modal header border width (1px)"
         },
         "color": {
@@ -3538,7 +3538,7 @@
           },
           "borderRadius": {
             "$type": "dimension",
-            "$value": "{border.radius.default}",
+            "$value": "{border.radius.sm}",
             "$description": "Action button border radius (3px)"
           },
           "icon": {
@@ -3553,7 +3553,7 @@
       "separator": {
         "height": {
           "$type": "dimension",
-          "$value": "{border.default}",
+          "$value": "{border.width.default}",
           "$description": "Header separator height (1px)"
         },
         "color": {
@@ -3594,7 +3594,7 @@
       "border": {
         "width": {
           "$type": "dimension",
-          "$value": "{border.default}",
+          "$value": "{border.width.default}",
           "$description": "Modal footer border width (1px)"
         },
         "color": {
@@ -3639,23 +3639,23 @@
       },
       "borderRadius": {
         "$type": "dimension",
-        "$value": "{border.radius.default}",
+        "$value": "{border.radius.sm}",
         "$description": "List item border radius (3px)"
       },
       "height": {
         "standard": {
           "$type": "dimension",
-          "$value": "{size.2}",
+          "$value": "{size.sm}",
           "$description": "Standard list item height (32px)"
         },
         "withAvatar": {
           "$type": "dimension",
-          "$value": "{size.3}",
+          "$value": "{size.md}",
           "$description": "List item height with small avatar (44px)"
         },
         "withAvatarLarge": {
           "$type": "dimension",
-          "$value": "{size.4}",
+          "$value": "{size.lg}",
           "$description": "List item height with medium avatar (56px)"
         },
         "withDescription": {
@@ -3976,7 +3976,7 @@
       "border": {
         "width": {
           "$type": "dimension",
-          "$value": "{border.default}",
+          "$value": "{border.width.default}",
           "$description": "App menu border width (1px)"
         },
         "color": {
@@ -4008,7 +4008,7 @@
     "expanded": {
       "width": {
         "$type": "dimension",
-        "$value": "{size.8}",
+        "$value": "{size.4xl}",
         "$description": "Expanded menu width (262px = 128px * 2 + 6px)"
       },
       "padding": {
@@ -4020,7 +4020,7 @@
     "icons": {
       "size": {
         "$type": "dimension",
-        "$value": "{size.3}",
+        "$value": "{size.md}",
         "$description": "Menu icon size (40px)"
       },
       "borderRadius": {
@@ -4032,7 +4032,7 @@
     "separator": {
       "height": {
         "$type": "dimension",
-        "$value": "{border.default}",
+        "$value": "{border.width.default}",
         "$description": "Separator height (1px)"
       },
       "color": {
@@ -4404,7 +4404,7 @@
     "item": {
       "size": {
         "$type": "dimension",
-        "$value": "{size.control.md}",
+        "$value": "{size.md}",
         "$description": "Pagination item size (32px circular button)"
       },
       "border": {
@@ -4525,12 +4525,12 @@
         },
         "width": {
           "$type": "dimension",
-          "$value": "{border.default}",
+          "$value": "{border.width.default}",
           "$description": "Pagination more indicator border width (1px)"
         },
         "radius": {
           "$type": "dimension",
-          "$value": "{border.radius.default}",
+          "$value": "{border.radius.sm}",
           "$description": "Pagination more indicator border radius (3px)"
         }
       },
@@ -4554,7 +4554,7 @@
   "progressbar": {
     "height": {
       "$type": "dimension",
-      "$value": "{size.1}",
+      "$value": "{size.xs}",
       "$description": "Progressbar component height (24px)"
     },
     "header": {

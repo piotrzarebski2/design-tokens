@@ -1094,39 +1094,75 @@
     }
   },
   "space": {
-    "025": { "$type": "dimension", "$value": "1px",   "$description": "Hairline — separatory, obramowania. Nie spacing." },
-    "05":  { "$type": "dimension", "$value": "2px",   "$description": "Micro offset — focus ring. Nie spacing." },
-    "1":   { "$type": "dimension", "$value": "4px",   "$description": "1 × 4px" },
-    "2":   { "$type": "dimension", "$value": "8px",   "$description": "2 × 4px" },
-    "3":   { "$type": "dimension", "$value": "12px",  "$description": "3 × 4px" },
-    "4":   { "$type": "dimension", "$value": "16px",  "$description": "4 × 4px" },
-    "5":   { "$type": "dimension", "$value": "20px",  "$description": "5 × 4px" },
-    "6":   { "$type": "dimension", "$value": "24px",  "$description": "6 × 4px" },
-    "8":   { "$type": "dimension", "$value": "32px",  "$description": "8 × 4px" },
-    "10":  { "$type": "dimension", "$value": "40px",  "$description": "10 × 4px" },
-    "12":  { "$type": "dimension", "$value": "48px",  "$description": "12 × 4px" },
-    "16":  { "$type": "dimension", "$value": "64px",  "$description": "16 × 4px" },
-    "20":  { "$type": "dimension", "$value": "80px",  "$description": "20 × 4px" },
-    "32":  { "$type": "dimension", "$value": "128px", "$description": "32 × 4px" }
-  },
-  "size": {
-    "1": { "$type": "dimension", "$value": "24px",  "$description": "Badge, status pill" },
-    "2": { "$type": "dimension", "$value": "32px",  "$description": "Compact list item, nav item" },
-    "3": { "$type": "dimension", "$value": "40px",  "$description": "Standard input, button" },
-    "4": { "$type": "dimension", "$value": "48px",  "$description": "Large button, dropdown footer" },
-    "5": { "$type": "dimension", "$value": "56px",  "$description": "Navbar, large list item" },
-    "6": { "$type": "dimension", "$value": "64px",  "$description": "App menu zone" },
-    "7": { "$type": "dimension", "$value": "80px",  "$description": "Page header area" },
-    "8": { "$type": "dimension", "$value": "128px", "$description": "XLarge — avatar xlarge, wide panel" },
-    "control": {
-      "sm": { "$type": "dimension", "$value": "32px", "$description": "Compact control height — compact list item, nav item" },
-      "md": { "$type": "dimension", "$value": "40px", "$description": "Normal control height — standard input, button" },
-      "lg": { "$type": "dimension", "$value": "48px", "$description": "Large control height — large button, dropdown footer" }
+    "025": {
+      "$type": "dimension",
+      "$value": "1px",
+      "$description": "Hairline — separatory, obramowania. Nie spacing."
     },
-    "icon": {
-      "sm": { "$type": "dimension", "$value": "16px", "$description": "Small icon — breadcrumb, helper text" },
-      "md": { "$type": "dimension", "$value": "20px", "$description": "Medium icon" },
-      "lg": { "$type": "dimension", "$value": "24px", "$description": "Standard icon — most UI contexts" }
+    "05": {
+      "$type": "dimension",
+      "$value": "2px",
+      "$description": "Micro offset — focus ring. Nie spacing."
+    },
+    "1": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": "1 × 4px"
+    },
+    "2": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "2 × 4px"
+    },
+    "3": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": "3 × 4px"
+    },
+    "4": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "4 × 4px"
+    },
+    "5": {
+      "$type": "dimension",
+      "$value": "20px",
+      "$description": "5 × 4px"
+    },
+    "6": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": "6 × 4px"
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$description": "8 × 4px"
+    },
+    "10": {
+      "$type": "dimension",
+      "$value": "40px",
+      "$description": "10 × 4px"
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$description": "12 × 4px"
+    },
+    "16": {
+      "$type": "dimension",
+      "$value": "64px",
+      "$description": "16 × 4px"
+    },
+    "20": {
+      "$type": "dimension",
+      "$value": "80px",
+      "$description": "20 × 4px"
+    },
+    "32": {
+      "$type": "dimension",
+      "$value": "128px",
+      "$description": "32 × 4px"
     }
   },
   "fontFamily": {
@@ -1259,33 +1295,6 @@
       "2": {
         "$type": "dimension",
         "$value": "2px"
-      }
-    },
-    "default": {
-      "$type": "dimension",
-      "$value": "{border.width.1}",
-      "$description": "Standard border width — 1px"
-    },
-    "big": {
-      "$type": "dimension",
-      "$value": "{border.width.2}",
-      "$description": "Focus / emphasis border width — 2px"
-    },
-    "radius": {
-      "default": {
-        "$type": "dimension",
-        "$value": "{radius.sm}",
-        "$description": "Default component radius — 8px (inputs, buttons, cards)"
-      },
-      "big": {
-        "$type": "dimension",
-        "$value": "{radius.lg}",
-        "$description": "Large radius — 16px (switch track)"
-      },
-      "full": {
-        "$type": "dimension",
-        "$value": "{radius.full}",
-        "$description": "Pill shape — avatars, status-pills, pagination dots"
       }
     }
   },
