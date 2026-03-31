@@ -1094,6 +1094,11 @@
     }
   },
   "space": {
+    "unit": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": "Base spacing unit — wszystkie tokeny space są wielokrotnością tej wartości"
+    },
     "025": {
       "$type": "dimension",
       "$value": "1px",
@@ -1106,63 +1111,63 @@
     },
     "1": {
       "$type": "dimension",
-      "$value": "4px",
-      "$description": "1 × 4px"
+      "$value": "{space.unit} * 1",
+      "$description": "1 × 4px = 4px"
     },
     "2": {
       "$type": "dimension",
-      "$value": "8px",
-      "$description": "2 × 4px"
+      "$value": "{space.unit} * 2",
+      "$description": "2 × 4px = 8px"
     },
     "3": {
       "$type": "dimension",
-      "$value": "12px",
-      "$description": "3 × 4px"
+      "$value": "{space.unit} * 3",
+      "$description": "3 × 4px = 12px"
     },
     "4": {
       "$type": "dimension",
-      "$value": "16px",
-      "$description": "4 × 4px"
+      "$value": "{space.unit} * 4",
+      "$description": "4 × 4px = 16px"
     },
     "5": {
       "$type": "dimension",
-      "$value": "20px",
-      "$description": "5 × 4px"
+      "$value": "{space.unit} * 5",
+      "$description": "5 × 4px = 20px"
     },
     "6": {
       "$type": "dimension",
-      "$value": "24px",
-      "$description": "6 × 4px"
+      "$value": "{space.unit} * 6",
+      "$description": "6 × 4px = 24px"
     },
     "8": {
       "$type": "dimension",
-      "$value": "32px",
-      "$description": "8 × 4px"
+      "$value": "{space.unit} * 8",
+      "$description": "8 × 4px = 32px"
     },
     "10": {
       "$type": "dimension",
-      "$value": "40px",
-      "$description": "10 × 4px"
+      "$value": "{space.unit} * 10",
+      "$description": "10 × 4px = 40px"
     },
     "12": {
       "$type": "dimension",
-      "$value": "48px",
-      "$description": "12 × 4px"
+      "$value": "{space.unit} * 12",
+      "$description": "12 × 4px = 48px"
     },
     "16": {
       "$type": "dimension",
-      "$value": "64px",
-      "$description": "16 × 4px"
+      "$value": "{space.unit} * 16",
+      "$description": "16 × 4px = 64px"
     },
     "20": {
       "$type": "dimension",
-      "$value": "80px",
-      "$description": "20 × 4px"
+      "$value": "{space.unit} * 20",
+      "$description": "20 × 4px = 80px"
     },
     "32": {
       "$type": "dimension",
-      "$value": "128px",
-      "$description": "32 × 4px"
+      "$value": "{space.unit} * 32",
+      "$description": "32 × 4px = 128px"
     }
   },
   "fontFamily": {
