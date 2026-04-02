@@ -3386,59 +3386,63 @@
             "$description": "Tabs container border color"
           }
         }
-      },
-      "item": {
-        "padding": {
-          "horizontal": {
-            "$type": "dimension",
-            "$value": "0px",
-            "$description": "Tab item horizontal padding (0px)"
-          },
-          "vertical": {
-            "$type": "dimension",
-            "$value": "{space.05}",
-            "$description": "Tab item vertical padding (2px)"
-          },
-          "bottom": {
-            "$type": "dimension",
-            "$value": "{inset.md}",
-            "$description": "Tab item bottom padding (12px)"
-          }
-        },
-        "gap": {
+      }
+    }
+  },
+  "tabs": {
+    "container": {
+      "gap": {
+        "$type": "dimension",
+        "$value": "{inline.xl}",
+        "$description": "Gap between tab items (24px)"
+      }
+    },
+    "item": {
+      "padding": {
+        "top": {
           "$type": "dimension",
-          "$value": "{inline.xl}",
-          "$description": "Gap between tab items (24px)"
+          "$value": "{space.05}",
+          "$description": "Tab item top padding (2px)"
         },
-        "typography": {
-          "$type": "typography",
-          "$value": "{typography.title.level5}",
-          "$description": "Tab item typography (level 5)"
+        "bottom": {
+          "$type": "dimension",
+          "$value": "{inset.md}",
+          "$description": "Tab item bottom padding (12px)"
+        }
+      },
+      "typography": {
+        "$type": "typography",
+        "$value": "{typography.title.level5}",
+        "$description": "Tab item typography (level 5)"
+      },
+      "text": {
+        "active": {
+          "$type": "color",
+          "$value": "{color.text.brand.default}",
+          "$description": "Active tab text color"
         },
-        "colors": {
-          "active": {
-            "text": {
-              "$type": "color",
-              "$value": "{color.background.brand.solid}",
-              "$description": "Active tab text color"
-            },
-            "border": {
-              "$type": "color",
-              "$value": "{color.background.brand.solid}",
-              "$description": "Active tab border color"
-            }
+        "default": {
+          "$type": "color",
+          "$value": "{color.text.base.muted}",
+          "$description": "Default (inactive) tab text color"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{color.text.base.default}",
+          "$description": "Hovered (inactive) tab text color"
+        }
+      },
+      "border": {
+        "active": {
+          "color": {
+            "$type": "color",
+            "$value": "{color.border.brand.default}",
+            "$description": "Active tab underline color"
           },
-          "inactive": {
-            "text": {
-              "$type": "color",
-              "$value": "{color.text.base.muted}",
-              "$description": "Inactive tab text color"
-            },
-            "text-hover": {
-              "$type": "color",
-              "$value": "{color.text.base.default}",
-              "$description": "Inactive tab text color"
-            }
+          "width": {
+            "$type": "dimension",
+            "$value": "{border.width.focus}",
+            "$description": "Active tab underline width (2px)"
           }
         }
       }
