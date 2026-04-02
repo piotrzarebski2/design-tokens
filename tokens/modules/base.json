@@ -1530,7 +1530,7 @@
     },
     "disabled": {
       "opacity": {
-        "$type": "number",
+        "$type": "opacity",
         "$value": "{opacity.disabled}",
         "$description": "Opacity applied to disabled interactive components (buttons, expanders, etc.) - 0.4 = 40%"
       }
@@ -2074,7 +2074,7 @@
       },
       "disabled": {
         "opacity": {
-          "$type": "number",
+          "$type": "opacity",
           "$value": "{opacity.disabled}",
           "$description": "Checkbox opacity for disabled state (0.4 = 40%)"
         }
@@ -2196,7 +2196,7 @@
       },
       "disabled": {
         "opacity": {
-          "$type": "number",
+          "$type": "opacity",
           "$value": "{opacity.disabled}",
           "$description": "Radio button opacity for disabled state (0.4 = 40%)"
         }
@@ -2304,7 +2304,7 @@
       },
       "disabled": {
         "opacity": {
-          "$type": "number",
+          "$type": "opacity",
           "$value": "{opacity.disabled}",
           "$description": "Switch opacity for disabled state (0.4 = 40%)"
         }
@@ -3022,7 +3022,7 @@
     },
     "disabled": {
       "opacity": {
-        "$type": "number",
+        "$type": "opacity",
         "$value": "{opacity.disabled}",
         "$description": "Card opacity for disabled state (0.4 = 40%)"
       }
@@ -3116,7 +3116,7 @@
     },
     "disabled": {
       "opacity": {
-        "$type": "number",
+        "$type": "opacity",
         "$value": "{opacity.disabled}",
         "$description": "Avatar opacity for disabled state (0.4 = 40%)"
       }
@@ -3494,7 +3494,7 @@
           "$description": "Separator color (white)"
         },
         "opacity": {
-          "$type": "number",
+          "$type": "opacity",
           "$value": "{opacity.muted}",
           "$description": "Separator opacity (30%)"
         }
@@ -3561,7 +3561,7 @@
           "$description": "Separator color (white)"
         },
         "opacity": {
-          "$type": "number",
+          "$type": "opacity",
           "$value": "{opacity.muted}",
           "$description": "Separator opacity (30%)"
         }
@@ -4138,7 +4138,7 @@
       },
       "disabled": {
         "opacity": {
-          "$type": "number",
+          "$type": "opacity",
           "$value": "{opacity.disabled}",
           "$description": "Disabled list item opacity (0.4 = 40%)"
         }
@@ -4668,7 +4668,7 @@
       },
       "disabled": {
         "opacity": {
-          "$type": "number",
+          "$type": "opacity",
           "$value": "{opacity.disabled}",
           "$description": "Pagination item opacity for disabled state"
         }
@@ -4711,7 +4711,7 @@
       },
       "disabled": {
         "opacity": {
-          "$type": "number",
+          "$type": "opacity",
           "$value": "{opacity.disabled}",
           "$description": "Pagination nav opacity for disabled state"
         }
@@ -4970,7 +4970,7 @@
     },
     "disabled": {
       "opacity": {
-        "$type": "number",
+        "$type": "opacity",
         "$value": "{opacity.disabled}",
         "$description": "Card Select opacity for disabled state (40%)"
       }
