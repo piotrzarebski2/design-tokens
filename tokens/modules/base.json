@@ -4830,7 +4830,7 @@
       "default": {
         "$type": "color",
         "$value": "{color.background.base.default}",
-        "$description": "Card Select background — biały we wszystkich stanach"
+        "$description": "Card Select background — white in all states"
       }
     },
     "border": {
@@ -4843,39 +4843,39 @@
         "default": {
           "$type": "dimension",
           "$value": "{border.width.default}",
-          "$description": "Card Select border width — default i hover (1px)"
+          "$description": "Card Select border width — default and hover (1px)"
         },
         "active": {
           "$type": "dimension",
           "$value": "{border.width.focus}",
-          "$description": "Card Select border width — focused i selected (2px)"
+          "$description": "Card Select border width — focused and selected (2px)"
         }
       },
       "color": {
         "default": {
           "$type": "color",
           "$value": "{color.border.base.default}",
-          "$description": "Card Select border — stan default (grey-200)"
+          "$description": "Card Select border — default state (grey-200)"
         },
         "hover": {
           "$type": "color",
           "$value": "{color.border.base.strong}",
-          "$description": "Card Select border — stan hover (grey-300)"
+          "$description": "Card Select border — hover state (grey-300)"
         },
         "focused": {
           "$type": "color",
           "$value": "{color.border.brand.default}",
-          "$description": "Card Select border — stan focused (blue-600)"
+          "$description": "Card Select border — focused state (blue-600)"
         },
         "selected": {
           "$type": "color",
           "$value": "{color.border.brand.default}",
-          "$description": "Card Select border — stan selected (blue-600)"
+          "$description": "Card Select border — selected state (blue-600)"
         },
         "disabled": {
           "$type": "color",
           "$value": "{color.border.base.default}",
-          "$description": "Card Select border — stan disabled (grey-200, identyczny z default)"
+          "$description": "Card Select border — disabled state (grey-200, same as default)"
         }
       }
     },
@@ -4883,26 +4883,26 @@
       "default": {
         "$type": "boxShadow",
         "$value": "{Shadows.Shadow 1}",
-        "$description": "Card Select shadow — stan default (wariant rised)"
+        "$description": "Card Select shadow — default state (rised variant)"
       },
       "hover": {
         "$type": "boxShadow",
         "$value": "{Shadows.Shadow 2}",
-        "$description": "Card Select shadow — hover i selected (wariant rised)"
+        "$description": "Card Select shadow — hover and selected state (rised variant)"
       }
     },
     "header": {
       "color": {
         "$type": "color",
         "$value": "{color.text.base.default}",
-        "$description": "Card Select nagłówek — kolor tekstu (grey-800)"
+        "$description": "Card Select header text color (grey-800)"
       }
     },
     "description": {
       "color": {
         "$type": "color",
         "$value": "{color.text.base.muted}",
-        "$description": "Card Select opis — kolor tekstu (grey-600)"
+        "$description": "Card Select description text color (grey-600)"
       }
     },
     "check": {
@@ -4911,17 +4911,17 @@
           "default": {
             "$type": "color",
             "$value": "{color.border.base.default}",
-            "$description": "Wskaźnik zaznaczenia — obramowanie niezaznaczone (grey-200)"
+            "$description": "Check indicator border — unselected state (grey-200)"
           },
           "hover": {
             "$type": "color",
             "$value": "{color.border.base.strong}",
-            "$description": "Wskaźnik zaznaczenia — obramowanie hover (grey-300)"
+            "$description": "Check indicator border — hover state (grey-300)"
           },
           "focused": {
             "$type": "color",
             "$value": "{color.border.brand.default}",
-            "$description": "Wskaźnik zaznaczenia — obramowanie focused (blue-600)"
+            "$description": "Check indicator border — focused state (blue-600)"
           }
         }
       },
@@ -4929,14 +4929,14 @@
         "selected": {
           "$type": "color",
           "$value": "{color.background.success.solid}",
-          "$description": "Wskaźnik zaznaczenia — tło stanu selected (zielony)"
+          "$description": "Check indicator background — selected state (green)"
         }
       },
       "icon": {
         "selected": {
           "$type": "color",
           "$value": "{color.icon.onSolid.success}",
-          "$description": "Wskaźnik zaznaczenia — ikona w stanie selected (biały check na zielonym)"
+          "$description": "Check indicator icon — selected state (white on green)"
         }
       }
     },
@@ -4944,12 +4944,12 @@
       "bg": {
         "$type": "color",
         "$value": "{color.background.warning.solidHover}",
-        "$description": "Tag Coming Soon — tło (#fab700, warning solidHover)"
+        "$description": "Coming Soon tag background (yellow)"
       },
       "text": {
         "$type": "color",
         "$value": "{color.text.onSolid.warning}",
-        "$description": "Tag Coming Soon — kolor tekstu (ciemny na żółtym)"
+        "$description": "Coming Soon tag text color (dark on yellow)"
       }
     },
     "size": {
@@ -4957,14 +4957,14 @@
         "padding": {
           "$type": "dimension",
           "$value": "{inset.xl}",
-          "$description": "Card Select padding — rozmiar normal (24px)"
+          "$description": "Card Select padding — normal size (24px)"
         }
       },
       "small": {
         "padding": {
           "$type": "dimension",
           "$value": "{inset.lg}",
-          "$description": "Card Select padding — rozmiar small (16px)"
+          "$description": "Card Select padding — small size (16px)"
         }
       }
     },
@@ -4972,7 +4972,7 @@
       "opacity": {
         "$type": "number",
         "$value": "{opacity.disabled}",
-        "$description": "Card Select opacity dla stanu disabled (40%)"
+        "$description": "Card Select opacity for disabled state (40%)"
       }
     }
   }
