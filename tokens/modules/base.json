@@ -1320,82 +1320,82 @@
         "text": {
           "default": {
             "$type": "color",
-            "$value": "{color.text.onSolid.success}",
-            "$description": "Primary success button text color for default state"
+            "$value": "{color.text.onSolid.custom}",
+            "$description": "Custom-color button text default"
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.text.onSolid.success}",
-            "$description": "Primary success button text color for hover state"
+            "$value": "{color.text.onSolid.custom}",
+            "$description": "Custom-color button text hover"
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.text.onSolid.success}",
-            "$description": "Primary success button text color for focus state"
+            "$value": "{color.text.onSolid.custom}",
+            "$description": "Custom-color button text focus"
           },
           "active": {
             "$type": "color",
-            "$value": "{color.text.onSolid.success}",
-            "$description": "Primary success button text color for active/selected state"
+            "$value": "{color.text.onSolid.custom}",
+            "$description": "Custom-color button text active"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{color.text.onSolid.success}",
-            "$description": "Primary success button text color for disabled state (same as default, opacity applied separately)"
+            "$value": "{color.text.onSolid.custom}",
+            "$description": "Custom-color button text disabled"
           }
         },
         "icon": {
           "default": {
             "$type": "color",
-            "$value": "{color.text.onSolid.success}",
-            "$description": "Primary success button icon color for default state"
+            "$value": "{color.text.onSolid.custom}",
+            "$description": "Custom-color button icon default"
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.text.onSolid.success}",
-            "$description": "Primary success button icon color for hover state"
+            "$value": "{color.text.onSolid.custom}",
+            "$description": "Custom-color button icon hover"
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.text.onSolid.success}",
-            "$description": "Primary success button icon color for focus state"
+            "$value": "{color.text.onSolid.custom}",
+            "$description": "Custom-color button icon focus"
           },
           "active": {
             "$type": "color",
-            "$value": "{color.text.onSolid.success}",
-            "$description": "Primary success button icon color for active/selected state"
+            "$value": "{color.text.onSolid.custom}",
+            "$description": "Custom-color button icon active"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{color.text.onSolid.success}",
-            "$description": "Primary success button icon color for disabled state (same as default, opacity applied separately)"
+            "$value": "{color.text.onSolid.custom}",
+            "$description": "Custom-color button icon disabled"
           }
         },
         "border": {
           "default": {
             "$type": "color",
             "$value": "{color.transparent}",
-            "$description": "Primary success button border color for default state (transparent)"
+            "$description": "Custom-color button border default — transparent"
           },
           "hover": {
             "$type": "color",
             "$value": "{color.transparent}",
-            "$description": "Primary success button border color for hover state (transparent)"
+            "$description": "Custom-color button border hover — transparent"
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.custom-color.solid}",
-            "$description": "Primary success button border color for focus state (green-600, 2px width)"
+            "$value": "{color.border.custom.default}",
+            "$description": "Custom-color button border focus"
           },
           "active": {
             "$type": "color",
             "$value": "{color.transparent}",
-            "$description": "Primary success button border color for active/selected state (transparent for solid variant)"
+            "$description": "Custom-color button border active — transparent"
           },
           "disabled": {
             "$type": "color",
             "$value": "{color.transparent}",
-            "$description": "Primary success button border color for disabled state (transparent)"
+            "$description": "Custom-color button border disabled — transparent"
           }
         }
       },
@@ -1404,99 +1404,126 @@
           "default": {
             "$type": "color",
             "$value": "{color.transparent}",
-            "$description": "Ghost primary button background color for default state (transparent)"
+            "$description": "Ghost-custom-color bg default — transparent"
           },
           "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.25",
+                  "space": "srgb"
+                }
+              }
+            },
             "$type": "color",
-            "$value": "{color.background.base.mutedHover}",
-            "$description": "Ghost primary button background color for hover state"
+            "$value": "{color.background.base.strong}",
+            "$description": "Ghost-custom-color bg hover — grey.400 @25%"
           },
           "focus": {
             "$type": "color",
             "$value": "{color.transparent}",
-            "$description": "Ghost primary button background color for focus state (transparent)"
+            "$description": "Ghost-custom-color bg focus — transparent"
           },
           "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.35",
+                  "space": "srgb"
+                }
+              }
+            },
             "$type": "color",
-            "$value": "{color.background.brand.subtle}",
-            "$description": "Ghost primary button background color for active/selected state (light blue background for toggle)"
+            "$value": "{color.background.base.strong}",
+            "$description": "Ghost-custom-color bg active — grey.400 @35%"
           },
           "disabled": {
             "$type": "color",
             "$value": "{color.transparent}",
-            "$description": "Ghost primary button background color for disabled state (transparent, opacity applied separately)"
+            "$description": "Ghost-custom-color bg disabled — transparent"
           }
         },
         "text": {
           "default": {
             "$type": "color",
-            "$value": "{color.custom-color.solid}",
-            "$description": "Ghost primary button text color for default state"
+            "$value": "{color.text.custom.default}",
+            "$description": "Ghost-custom-color text default"
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.text.brand.default}",
-            "$description": "Ghost primary button text color for hover state"
+            "$value": "{color.text.custom.default}",
+            "$description": "Ghost-custom-color text hover"
           },
           "focus": {
             "$type": "color",
             "$value": "{color.text.base.muted}",
-            "$description": "Ghost primary button text color for focus state"
+            "$description": "Ghost-custom-color text focus"
           },
           "active": {
             "$type": "color",
-            "$value": "{color.background.brand.solid}",
-            "$description": "Ghost primary button text color for active/selected state (blue text for toggle)"
+            "$value": "{color.text.custom.default}",
+            "$description": "Ghost-custom-color text active"
           },
           "disabled": {
             "$type": "color",
             "$value": "{color.text.base.muted}",
-            "$description": "Ghost primary button text color for disabled state (same as default, opacity applied separately)"
+            "$description": "Ghost-custom-color text disabled"
           }
         },
         "icon": {
           "default": {
             "$type": "color",
-            "$value": "{color.text.base.muted}",
-            "$description": "Ghost primary button icon color for default state"
+            "$value": "{color.icon.custom.default}",
+            "$description": "Ghost-custom-color icon default"
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.text.brand.default}",
-            "$description": "Ghost primary button icon color for hover state"
+            "$value": "{color.icon.custom.default}",
+            "$description": "Ghost-custom-color icon hover"
           },
           "focus": {
             "$type": "color",
             "$value": "{color.text.base.muted}",
-            "$description": "Ghost primary button icon color for focus state"
+            "$description": "Ghost-custom-color icon focus"
           },
           "active": {
             "$type": "color",
-            "$value": "{color.background.brand.solid}",
-            "$description": "Ghost primary button icon color for active/selected state (blue icon for toggle)"
+            "$value": "{color.icon.custom.default}",
+            "$description": "Ghost-custom-color icon active"
           },
           "disabled": {
             "$type": "color",
             "$value": "{color.text.base.muted}",
-            "$description": "Ghost primary button icon color for disabled state (same as default, opacity applied separately)"
+            "$description": "Ghost-custom-color icon disabled"
           }
         },
         "border": {
           "default": {
             "$type": "color",
-            "$value": "{color.border.base.none}"
+            "$value": "{color.border.base.none}",
+            "$description": "Ghost-custom-color border default"
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.border.base.none}"
+            "$value": "{color.border.base.none}",
+            "$description": "Ghost-custom-color border hover"
           },
           "focus": {
             "$type": "color",
-            "$value": "{outline.color.focus.secondary}"
+            "$value": "{outline.color.focus.secondary}",
+            "$description": "Ghost-custom-color border focus"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.border.base.none}",
+            "$description": "Ghost-custom-color border active"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{color.border.base.none}"
+            "$value": "{color.border.base.none}",
+            "$description": "Ghost-custom-color border disabled"
           }
         }
       }
