@@ -3277,8 +3277,8 @@
         },
         "vertical": {
           "$type": "dimension",
-          "$value": "{inset.lg}",
-          "$description": "Page header vertical padding (16px)"
+          "$value": "{inset.xl} - 4",
+          "$description": "Page header vertical padding (20px). TODO: visual diff → docelowo {inset.xl}"
         }
       },
       "gap": {
@@ -3312,6 +3312,11 @@
             "$value": "{color.border.base.strong}",
             "$description": "Navigation separator color"
           }
+        },
+        "gap": {
+          "$type": "dimension",
+          "$value": "{inline.xl}",
+          "$description": "Gap between back icon, separator and label area (24px)"
         }
       },
       "label": {
@@ -3333,23 +3338,18 @@
               "$description": "Help icon size (24px)"
             }
           }
+        },
+        "gap": {
+          "$type": "dimension",
+          "$value": "{inline.sm}",
+          "$description": "Gap between title and help icon in Page variant (8px)"
         }
       },
-      "avatar": {
-        "size": {
+      "object": {
+        "gap": {
           "$type": "dimension",
-          "$value": "{size.md}",
-          "$description": "Object avatar size (40px)"
-        },
-        "bg": {
-          "$type": "color",
-          "$value": "{color.background.base.muted}",
-          "$description": "Object avatar background color"
-        },
-        "borderRadius": {
-          "$type": "dimension",
-          "$value": "8px",
-          "$description": "Object avatar border radius (8px)"
+          "$value": "{inline.lg}",
+          "$description": "Gap between avatar and label area in Object variant (16px)"
         }
       }
     },
@@ -3370,8 +3370,8 @@
           },
           "vertical": {
             "$type": "dimension",
-            "$value": "{space.025}",
-            "$description": "Tabs container vertical padding (1px)"
+            "$value": "{space.1}",
+            "$description": "Tabs container vertical padding (4px)"
           }
         },
         "border": {
