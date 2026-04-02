@@ -348,12 +348,12 @@
       "entity": {
         "subtle": {
           "$type": "color",
-          "$value": "{color-dark.cyan.900}",
+          "$value": "{color-dark.cyan.50}",
           "$description": "Subtelne tło Supply — dark mode"
         },
         "subtleHover": {
           "$type": "color",
-          "$value": "{color-dark.cyan.800}",
+          "$value": "{color-dark.cyan.100}",
           "$description": "Subtelne tło Supply — hover dark"
         },
         "solid": {
@@ -375,12 +375,12 @@
       "service": {
         "subtle": {
           "$type": "color",
-          "$value": "{color-dark.purple.900}",
+          "$value": "{color-dark.purple.50}",
           "$description": "Subtelne tło Service — dark mode"
         },
         "subtleHover": {
           "$type": "color",
-          "$value": "{color-dark.purple.800}",
+          "$value": "{color-dark.purple.100}",
           "$description": "Subtelne tło Service — hover dark"
         },
         "solid": {
@@ -402,12 +402,12 @@
       "supply": {
         "subtle": {
           "$type": "color",
-          "$value": "{color-dark.violet.900}",
+          "$value": "{color-dark.violet.50}",
           "$description": "Subtelne tło Entity — dark mode"
         },
         "subtleHover": {
           "$type": "color",
-          "$value": "{color-dark.violet.800}",
+          "$value": "{color-dark.violet.100}",
           "$description": "Subtelne tło Entity — hover dark"
         },
         "solid": {
@@ -661,21 +661,21 @@
       "entity": {
         "default": {
           "$type": "color",
-          "$value": "{color-dark.cyan.700}",
+          "$value": "{color-dark.cyan.600}",
           "$description": "Ikona Supply — dark mode"
         }
       },
       "service": {
         "default": {
           "$type": "color",
-          "$value": "{color-dark.purple.700}",
+          "$value": "{color-dark.purple.600}",
           "$description": "Ikona Service — dark mode"
         }
       },
       "supply": {
         "default": {
           "$type": "color",
-          "$value": "{color-dark.violet.700}",
+          "$value": "{color-dark.violet.600}",
           "$description": "Ikona Entity — dark mode"
         }
       }
