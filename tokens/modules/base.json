@@ -4854,13 +4854,13 @@
       "color": {
         "default": {
           "$type": "color",
-          "$value": "{color.border.base.strong}",
-          "$description": "Card Select border — stan default (grey-300)"
+          "$value": "{color.border.base.default}",
+          "$description": "Card Select border — stan default (grey-200)"
         },
         "hover": {
           "$type": "color",
-          "$value": "{color.border.base.strongHover}",
-          "$description": "Card Select border — stan hover (grey-400)"
+          "$value": "{color.border.base.strong}",
+          "$description": "Card Select border — stan hover (grey-300)"
         },
         "focused": {
           "$type": "color",
@@ -4874,8 +4874,8 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{color.border.base.disabled}",
-          "$description": "Card Select border — stan disabled (grey-200)"
+          "$value": "{color.border.base.default}",
+          "$description": "Card Select border — stan disabled (grey-200, identyczny z default)"
         }
       }
     },
@@ -4910,13 +4910,13 @@
         "color": {
           "default": {
             "$type": "color",
-            "$value": "{color.border.base.strong}",
-            "$description": "Wskaźnik zaznaczenia — obramowanie niezaznaczone (grey-300)"
+            "$value": "{color.border.base.default}",
+            "$description": "Wskaźnik zaznaczenia — obramowanie niezaznaczone (grey-200)"
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.border.base.strongHover}",
-            "$description": "Wskaźnik zaznaczenia — obramowanie hover (grey-400)"
+            "$value": "{color.border.base.strong}",
+            "$description": "Wskaźnik zaznaczenia — obramowanie hover (grey-300)"
           },
           "focused": {
             "$type": "color",
@@ -4943,8 +4943,8 @@
     "tag": {
       "bg": {
         "$type": "color",
-        "$value": "{color.background.warning.solid}",
-        "$description": "Tag Coming Soon — tło (żółty)"
+        "$value": "{color.background.warning.solidHover}",
+        "$description": "Tag Coming Soon — tło (#fab700, warning solidHover)"
       },
       "text": {
         "$type": "color",
