@@ -4975,5 +4975,79 @@
         "$description": "Card Select opacity for disabled state (40%)"
       }
     }
+  },
+  "time-picker": {
+    "overlay": {
+      "bg": {
+        "$type": "color",
+        "$value": "{color.background.base.default}",
+        "$description": "Time Picker overlay background (white)"
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": "{Shadows.Shadow 2}",
+        "$description": "Time Picker overlay drop shadow"
+      },
+      "separator": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.background.base.muted}",
+          "$description": "Separator between columns (1px, grey-100)"
+        }
+      },
+      "ampm": {
+        "border": {
+          "$type": "color",
+          "$value": "{color.border.base.default}",
+          "$description": "Right border on AM/PM column (grey-200)"
+        }
+      }
+    },
+    "item": {
+      "height": {
+        "$type": "dimension",
+        "$value": "{size.sm}",
+        "$description": "Time item row height (32px)"
+      },
+      "padding": {
+        "$type": "dimension",
+        "$value": "{inset.sm}",
+        "$description": "Time item padding (8px)"
+      },
+      "bg": {
+        "default": {
+          "$type": "color",
+          "$value": "{color.transparent}",
+          "$description": "Time item background — default state (transparent)"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{color.background.base.subtle}",
+          "$description": "Time item background — hover state (grey-50)"
+        },
+        "selected": {
+          "$type": "color",
+          "$value": "{color.background.brand.solid}",
+          "$description": "Time item background — selected state (blue-600)"
+        }
+      },
+      "text": {
+        "default": {
+          "$type": "color",
+          "$value": "{color.text.base.muted}",
+          "$description": "Time item text — default state (grey-600)"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{color.text.brand.default}",
+          "$description": "Time item text — hover state (blue-600)"
+        },
+        "selected": {
+          "$type": "color",
+          "$value": "{color.text.onSolid.default}",
+          "$description": "Time item text — selected state (white)"
+        }
+      }
+    }
   }
 }
