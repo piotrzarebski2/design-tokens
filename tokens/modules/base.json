@@ -491,12 +491,21 @@
             },
             "$type": "color",
             "$value": "{color.background.base.strong}",
-            "$description": "Tertiary button bg default — semi-transparent grey @ 15% (alpha modifier replaces legacy hex-alpha suffix)"
+            "$description": "Tertiary bg default — grey.400 @15%"
           },
           "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.25",
+                  "space": "srgb"
+                }
+              }
+            },
             "$type": "color",
-            "$value": "{color.background.base.mutedHover}",
-            "$description": "Tertiary button background color for hover state"
+            "$value": "{color.background.base.strong}",
+            "$description": "Tertiary bg hover — grey.400 @25%"
           },
           "focus": {
             "$extensions": {
@@ -510,7 +519,21 @@
             },
             "$type": "color",
             "$value": "{color.background.base.strong}",
-            "$description": "Tertiary button bg focus — semi-transparent grey @ 15% (alpha modifier replaces legacy hex-alpha suffix)"
+            "$description": "Tertiary bg focus — grey.400 @15%"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.35",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{color.background.base.strong}",
+            "$description": "Tertiary bg active — grey.400 @35%"
           },
           "disabled": {
             "$extensions": {
@@ -524,12 +547,7 @@
             },
             "$type": "color",
             "$value": "{color.background.base.strong}",
-            "$description": "Tertiary button bg disabled — semi-transparent grey @ 15% (alpha modifier replaces legacy hex-alpha suffix)"
-          },
-          "active": {
-            "$type": "color",
-            "$value": "{color.background.brand.subtle}",
-            "$description": "Tertiary button background color for active/selected state (light blue background for toggle)"
+            "$description": "Tertiary bg disabled — grey.400 @15%"
           }
         },
         "text": {
@@ -610,7 +628,7 @@
           "default": {
             "$type": "color",
             "$value": "{color.transparent}",
-            "$description": "Ghost primary button background color for default state (transparent)"
+            "$description": "Ghost-primary bg default — transparent"
           },
           "hover": {
             "$extensions": {
@@ -624,12 +642,12 @@
             },
             "$type": "color",
             "$value": "{color.background.base.strong}",
-            "$description": "Ghost primary button background color for hover state"
+            "$description": "Ghost-primary bg hover — grey.400 @25%"
           },
           "focus": {
             "$type": "color",
             "$value": "{color.transparent}",
-            "$description": "Ghost primary button background color for focus state (transparent)"
+            "$description": "Ghost-primary bg focus — transparent"
           },
           "active": {
             "$extensions": {
@@ -643,12 +661,12 @@
             },
             "$type": "color",
             "$value": "{color.background.base.strong}",
-            "$description": "Ghost primary button background color for active/selected state (light blue background for toggle)"
+            "$description": "Ghost-primary bg active — grey.400 @35%"
           },
           "disabled": {
             "$type": "color",
             "$value": "{color.transparent}",
-            "$description": "Ghost primary button background color for disabled state (transparent, opacity applied separately)"
+            "$description": "Ghost-primary bg disabled — transparent"
           }
         },
         "text": {
@@ -932,7 +950,8 @@
         "bg": {
           "default": {
             "$type": "color",
-            "$value": "{color.transparent}"
+            "$value": "{color.transparent}",
+            "$description": "Ghost-secondary bg default — transparent"
           },
           "hover": {
             "$extensions": {
@@ -945,7 +964,13 @@
               }
             },
             "$type": "color",
-            "$value": "{color.background.base.strong}"
+            "$value": "{color.background.base.strong}",
+            "$description": "Ghost-secondary bg hover — grey.400 @25%"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{color.transparent}",
+            "$description": "Ghost-secondary bg focus — transparent"
           },
           "active": {
             "$extensions": {
@@ -958,15 +983,13 @@
               }
             },
             "$type": "color",
-            "$value": "{color.background.base.strong}"
-          },
-          "focus": {
-            "$type": "color",
-            "$value": "{color.transparent}"
+            "$value": "{color.background.base.strong}",
+            "$description": "Ghost-secondary bg active — grey.400 @35%"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{color.transparent}"
+            "$value": "{color.transparent}",
+            "$description": "Ghost-secondary bg disabled — transparent"
           }
         },
         "text": {
@@ -1028,7 +1051,8 @@
         "bg": {
           "default": {
             "$type": "color",
-            "$value": "{color.transparent}"
+            "$value": "{color.transparent}",
+            "$description": "Ghost-secondary-white bg default — transparent"
           },
           "hover": {
             "$extensions": {
@@ -1041,7 +1065,13 @@
               }
             },
             "$type": "color",
-            "$value": "{color.background.base.strongHover}"
+            "$value": "{color.background.base.strongHover}",
+            "$description": "Ghost-secondary-white bg hover — grey.500 @25%"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{color.transparent}",
+            "$description": "Ghost-secondary-white bg focus — transparent"
           },
           "active": {
             "$extensions": {
@@ -1054,15 +1084,13 @@
               }
             },
             "$type": "color",
-            "$value": "{color.background.base.strongHover}"
-          },
-          "focus": {
-            "$type": "color",
-            "$value": "{color.transparent}"
+            "$value": "{color.background.base.strongHover}",
+            "$description": "Ghost-secondary-white bg active — grey.500 @10%"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{color.transparent}"
+            "$value": "{color.transparent}",
+            "$description": "Ghost-secondary-white bg disabled — transparent"
           }
         },
         "text": {
@@ -1133,15 +1161,50 @@
               }
             },
             "$type": "color",
-            "$value": "{color.background.neutral.solid}"
+            "$value": "{color.border.base.strong}",
+            "$description": "Tertiary-white bg default — grey.300 @15%"
           },
           "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.25",
+                  "space": "srgb"
+                }
+              }
+            },
             "$type": "color",
-            "$value": "{color.background.neutral.solidHover}"
+            "$value": "{color.border.base.strong}",
+            "$description": "Tertiary-white bg hover — grey.300 @25%"
           },
           "focus": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.15",
+                  "space": "srgb"
+                }
+              }
+            },
             "$type": "color",
-            "$value": "{color.background.neutral.solid}"
+            "$value": "{color.border.base.strong}",
+            "$description": "Tertiary-white bg focus — grey.300 @15%"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.10",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{color.border.base.strong}",
+            "$description": "Tertiary-white bg active — grey.300 @10%"
           },
           "disabled": {
             "$extensions": {
@@ -1154,8 +1217,8 @@
               }
             },
             "$type": "color",
-            "$value": "{color.background.neutral.solid}",
-            "$description": "Tertiary-white button bg disabled — semi-transparent dark grey @ 15% (alpha modifier replaces legacy hex-alpha suffix)"
+            "$value": "{color.border.base.strong}",
+            "$description": "Tertiary-white bg disabled — grey.300 @15%"
           }
         },
         "text": {
