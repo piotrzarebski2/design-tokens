@@ -2828,7 +2828,9 @@
       "border.radius.sm": "91903692f0bafc3eb3679be28a70a9835f114f39",
       "border.radius.md": "e7f370999250e0730271bc388f8d9a9cec522aaa",
       "border.radius.lg": "0c01139887909f0fa3766b0a75f82bd11ca6af39",
-      "border.radius.full": "2d93fda2989344c3cee9e7965e29e64c80b9b366"
+      "border.radius.full": "2d93fda2989344c3cee9e7965e29e64c80b9b366",
+      "opacity.disabled": "ef3a39cabcc0f741cbc5f0789ec5855b5f990c3a",
+      "opacity.muted": "322d8ec68070efdd0b42868c458c9deb7e754265"
     }
   },
   {
