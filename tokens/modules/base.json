@@ -4824,5 +4824,156 @@
         "$description": "Gap between inline progressbar bar and value text (8px)"
       }
     }
+  },
+  "card-select": {
+    "bg": {
+      "default": {
+        "$type": "color",
+        "$value": "{color.background.base.default}",
+        "$description": "Card Select background — biały we wszystkich stanach"
+      }
+    },
+    "border": {
+      "radius": {
+        "$type": "dimension",
+        "$value": "{border.radius.sm}",
+        "$description": "Card Select border radius (8px)"
+      },
+      "width": {
+        "default": {
+          "$type": "dimension",
+          "$value": "{border.width.default}",
+          "$description": "Card Select border width — default i hover (1px)"
+        },
+        "active": {
+          "$type": "dimension",
+          "$value": "{border.width.focus}",
+          "$description": "Card Select border width — focused i selected (2px)"
+        }
+      },
+      "color": {
+        "default": {
+          "$type": "color",
+          "$value": "{color.border.base.strong}",
+          "$description": "Card Select border — stan default (grey-300)"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{color.border.base.strongHover}",
+          "$description": "Card Select border — stan hover (grey-400)"
+        },
+        "focused": {
+          "$type": "color",
+          "$value": "{color.border.brand.default}",
+          "$description": "Card Select border — stan focused (blue-600)"
+        },
+        "selected": {
+          "$type": "color",
+          "$value": "{color.border.brand.default}",
+          "$description": "Card Select border — stan selected (blue-600)"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{color.border.base.disabled}",
+          "$description": "Card Select border — stan disabled (grey-200)"
+        }
+      }
+    },
+    "shadow": {
+      "default": {
+        "$type": "boxShadow",
+        "$value": "{Shadows.Shadow 1}",
+        "$description": "Card Select shadow — stan default (wariant rised)"
+      },
+      "hover": {
+        "$type": "boxShadow",
+        "$value": "{Shadows.Shadow 2}",
+        "$description": "Card Select shadow — hover i selected (wariant rised)"
+      }
+    },
+    "header": {
+      "color": {
+        "$type": "color",
+        "$value": "{color.text.base.default}",
+        "$description": "Card Select nagłówek — kolor tekstu (grey-800)"
+      }
+    },
+    "description": {
+      "color": {
+        "$type": "color",
+        "$value": "{color.text.base.muted}",
+        "$description": "Card Select opis — kolor tekstu (grey-600)"
+      }
+    },
+    "check": {
+      "border": {
+        "color": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.border.base.strong}",
+            "$description": "Wskaźnik zaznaczenia — obramowanie niezaznaczone (grey-300)"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{color.border.base.strongHover}",
+            "$description": "Wskaźnik zaznaczenia — obramowanie hover (grey-400)"
+          },
+          "focused": {
+            "$type": "color",
+            "$value": "{color.border.brand.default}",
+            "$description": "Wskaźnik zaznaczenia — obramowanie focused (blue-600)"
+          }
+        }
+      },
+      "bg": {
+        "selected": {
+          "$type": "color",
+          "$value": "{color.background.success.solid}",
+          "$description": "Wskaźnik zaznaczenia — tło stanu selected (zielony)"
+        }
+      },
+      "icon": {
+        "selected": {
+          "$type": "color",
+          "$value": "{color.icon.onSolid.success}",
+          "$description": "Wskaźnik zaznaczenia — ikona w stanie selected (biały check na zielonym)"
+        }
+      }
+    },
+    "tag": {
+      "bg": {
+        "$type": "color",
+        "$value": "{color.background.warning.solid}",
+        "$description": "Tag Coming Soon — tło (żółty)"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{color.text.onSolid.warning}",
+        "$description": "Tag Coming Soon — kolor tekstu (ciemny na żółtym)"
+      }
+    },
+    "size": {
+      "normal": {
+        "padding": {
+          "$type": "dimension",
+          "$value": "{inset.xl}",
+          "$description": "Card Select padding — rozmiar normal (24px)"
+        }
+      },
+      "small": {
+        "padding": {
+          "$type": "dimension",
+          "$value": "{inset.lg}",
+          "$description": "Card Select padding — rozmiar small (16px)"
+        }
+      }
+    },
+    "disabled": {
+      "opacity": {
+        "$type": "number",
+        "$value": "{opacity.disabled}",
+        "$description": "Card Select opacity dla stanu disabled (40%)"
+      }
+    }
   }
 }
