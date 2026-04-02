@@ -480,9 +480,6 @@
       "tertiary": {
         "bg": {
           "default": {
-            "$type": "color",
-            "$value": "{color.background.base.strong}",
-            "$description": "Tertiary button bg default — semi-transparent grey @ 15% (alpha modifier replaces legacy hex-alpha suffix)",
             "$extensions": {
               "studio.tokens": {
                 "modify": {
@@ -491,7 +488,10 @@
                   "space": "srgb"
                 }
               }
-            }
+            },
+            "$type": "color",
+            "$value": "{color.background.base.strong}",
+            "$description": "Tertiary button bg default — semi-transparent grey @ 15% (alpha modifier replaces legacy hex-alpha suffix)"
           },
           "hover": {
             "$type": "color",
@@ -499,9 +499,6 @@
             "$description": "Tertiary button background color for hover state"
           },
           "focus": {
-            "$type": "color",
-            "$value": "{color.background.base.strong}",
-            "$description": "Tertiary button bg focus — semi-transparent grey @ 15% (alpha modifier replaces legacy hex-alpha suffix)",
             "$extensions": {
               "studio.tokens": {
                 "modify": {
@@ -510,12 +507,12 @@
                   "space": "srgb"
                 }
               }
-            }
+            },
+            "$type": "color",
+            "$value": "{color.background.base.strong}",
+            "$description": "Tertiary button bg focus — semi-transparent grey @ 15% (alpha modifier replaces legacy hex-alpha suffix)"
           },
           "disabled": {
-            "$type": "color",
-            "$value": "{color.background.base.strong}",
-            "$description": "Tertiary button bg disabled — semi-transparent grey @ 15% (alpha modifier replaces legacy hex-alpha suffix)",
             "$extensions": {
               "studio.tokens": {
                 "modify": {
@@ -524,7 +521,10 @@
                   "space": "srgb"
                 }
               }
-            }
+            },
+            "$type": "color",
+            "$value": "{color.background.base.strong}",
+            "$description": "Tertiary button bg disabled — semi-transparent grey @ 15% (alpha modifier replaces legacy hex-alpha suffix)"
           },
           "active": {
             "$type": "color",
@@ -613,8 +613,17 @@
             "$description": "Ghost primary button background color for default state (transparent)"
           },
           "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.25",
+                  "space": "srgb"
+                }
+              }
+            },
             "$type": "color",
-            "$value": "{color.background.base.mutedHover}",
+            "$value": "{color.background.base.strong}",
             "$description": "Ghost primary button background color for hover state"
           },
           "focus": {
@@ -623,8 +632,17 @@
             "$description": "Ghost primary button background color for focus state (transparent)"
           },
           "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.35",
+                  "space": "srgb"
+                }
+              }
+            },
             "$type": "color",
-            "$value": "{color.background.brand.subtle}",
+            "$value": "{color.background.base.strong}",
             "$description": "Ghost primary button background color for active/selected state (light blue background for toggle)"
           },
           "disabled": {
@@ -917,8 +935,17 @@
             "$value": "{color.transparent}"
           },
           "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.25",
+                  "space": "srgb"
+                }
+              }
+            },
             "$type": "color",
-            "$value": "{color.background.base.mutedHover}"
+            "$value": "{color.background.base.strong}"
           },
           "focus": {
             "$type": "color",
@@ -1073,9 +1100,6 @@
             "$value": "{color.background.neutral.solid}"
           },
           "disabled": {
-            "$type": "color",
-            "$value": "{color.background.neutral.solid}",
-            "$description": "Tertiary-white button bg disabled — semi-transparent dark grey @ 15% (alpha modifier replaces legacy hex-alpha suffix)",
             "$extensions": {
               "studio.tokens": {
                 "modify": {
@@ -1084,7 +1108,10 @@
                   "space": "srgb"
                 }
               }
-            }
+            },
+            "$type": "color",
+            "$value": "{color.background.neutral.solid}",
+            "$description": "Tertiary-white button bg disabled — semi-transparent dark grey @ 15% (alpha modifier replaces legacy hex-alpha suffix)"
           }
         },
         "text": {
