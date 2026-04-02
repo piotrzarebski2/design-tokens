@@ -3407,7 +3407,12 @@
         "bottom": {
           "$type": "dimension",
           "$value": "{inset.md}",
-          "$description": "Tab item bottom padding (12px)"
+          "$description": "Tab item bottom padding for Text variants (12px)"
+        },
+        "bottomIcon": {
+          "$type": "dimension",
+          "$value": "{inset.md} - 2",
+          "$description": "Tab item bottom padding for Icon/Icon+Text variants (10px). TODO: visual diff → docelowo {inset.sm} or {inset.md}"
         }
       },
       "typography": {
