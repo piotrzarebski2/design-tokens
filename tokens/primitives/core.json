@@ -1271,7 +1271,7 @@
   "radius": {
     "xs": {
       "$type": "dimension",
-      "$value": "4px"
+      "$value": "3px"
     },
     "sm": {
       "$type": "dimension",

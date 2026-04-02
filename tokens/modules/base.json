@@ -4836,7 +4836,7 @@
     "border": {
       "radius": {
         "$type": "dimension",
-        "$value": "{border.radius.sm}",
+        "$value": "{border.radius.xs}",
         "$description": "Card Select border radius (8px)"
       },
       "width": {
