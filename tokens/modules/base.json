@@ -2781,6 +2781,108 @@
           "$value": "{color.icon.base.default}",
           "$description": "Section message icon color for informative variant"
         }
+      },
+      "supply": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.background.supply.subtle}",
+          "$description": "Section message background for supply variant"
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{color.border.supply.strong}",
+          "$description": "Section message border color for supply variant"
+        },
+        "borderTop": {
+          "$type": "color",
+          "$value": "{color.border.supply.default}",
+          "$description": "Section message top accent border for supply variant"
+        },
+        "text": {
+          "header": {
+            "$type": "color",
+            "$value": "{color.text.base.default}",
+            "$description": "Section message header text for supply variant"
+          },
+          "description": {
+            "$type": "color",
+            "$value": "{color.text.base.muted}",
+            "$description": "Section message description text for supply variant"
+          }
+        },
+        "icon": {
+          "$type": "color",
+          "$value": "{color.icon.supply.default}",
+          "$description": "Section message icon color for supply variant"
+        }
+      },
+      "service": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.background.service.subtle}",
+          "$description": "Section message background for service variant"
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{color.border.service.strong}",
+          "$description": "Section message border color for service variant"
+        },
+        "borderTop": {
+          "$type": "color",
+          "$value": "{color.border.service.default}",
+          "$description": "Section message top accent border for service variant"
+        },
+        "text": {
+          "header": {
+            "$type": "color",
+            "$value": "{color.text.base.default}",
+            "$description": "Section message header text for service variant"
+          },
+          "description": {
+            "$type": "color",
+            "$value": "{color.text.base.muted}",
+            "$description": "Section message description text for service variant"
+          }
+        },
+        "icon": {
+          "$type": "color",
+          "$value": "{color.icon.service.default}",
+          "$description": "Section message icon color for service variant"
+        }
+      },
+      "entity": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.background.entity.subtle}",
+          "$description": "Section message background for entity variant"
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{color.border.entity.strong}",
+          "$description": "Section message border color for entity variant"
+        },
+        "borderTop": {
+          "$type": "color",
+          "$value": "{color.border.entity.default}",
+          "$description": "Section message top accent border for entity variant"
+        },
+        "text": {
+          "header": {
+            "$type": "color",
+            "$value": "{color.text.base.default}",
+            "$description": "Section message header text for entity variant"
+          },
+          "description": {
+            "$type": "color",
+            "$value": "{color.text.base.muted}",
+            "$description": "Section message description text for entity variant"
+          }
+        },
+        "icon": {
+          "$type": "color",
+          "$value": "{color.icon.entity.default}",
+          "$description": "Section message icon color for entity variant"
+        }
       }
     },
     "content": {
