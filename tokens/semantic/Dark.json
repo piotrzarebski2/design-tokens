@@ -211,6 +211,87 @@
           "$type": "color",
           "$value": "{color-dark.custom.700}"
         }
+      },
+      "supply": {
+        "subtle": {
+          "$type": "color",
+          "$value": "{color-dark.cyan.900}",
+          "$description": "Subtelne tło Supply — dark mode"
+        },
+        "subtleHover": {
+          "$type": "color",
+          "$value": "{color-dark.cyan.800}",
+          "$description": "Subtelne tło Supply — hover dark"
+        },
+        "solid": {
+          "$type": "color",
+          "$value": "{color-dark.cyan.600}",
+          "$description": "Solidne tło Supply — dark mode"
+        },
+        "solidHover": {
+          "$type": "color",
+          "$value": "{color-dark.cyan.500}",
+          "$description": "Solidne tło Supply — hover dark"
+        },
+        "solidActive": {
+          "$type": "color",
+          "$value": "{color-dark.cyan.700}",
+          "$description": "Solidne tło Supply — active dark"
+        }
+      },
+      "service": {
+        "subtle": {
+          "$type": "color",
+          "$value": "{color-dark.purple.900}",
+          "$description": "Subtelne tło Service — dark mode"
+        },
+        "subtleHover": {
+          "$type": "color",
+          "$value": "{color-dark.purple.800}",
+          "$description": "Subtelne tło Service — hover dark"
+        },
+        "solid": {
+          "$type": "color",
+          "$value": "{color-dark.purple.600}",
+          "$description": "Solidne tło Service — dark mode"
+        },
+        "solidHover": {
+          "$type": "color",
+          "$value": "{color-dark.purple.500}",
+          "$description": "Solidne tło Service — hover dark"
+        },
+        "solidActive": {
+          "$type": "color",
+          "$value": "{color-dark.purple.700}",
+          "$description": "Solidne tło Service — active dark"
+        }
+      },
+      "entity": {
+        "subtle": {
+          "$type": "color",
+          "$value": "{color-dark.violet.900}",
+          "$description": "Subtelne tło Entity — dark mode"
+        },
+        "subtleHover": {
+          "$type": "color",
+          "$value": "{color-dark.violet.800}",
+          "$description": "Subtelne tło Entity — hover dark"
+        },
+        "solid": {
+          "$type": "color",
+          "$value": "{color-dark.violet.600}",
+          "$description": "Solidne tło Entity — dark mode"
+        },
+        "solidHover": {
+          "$type": "color",
+          "$value": "{color-dark.violet.500}",
+          "$description": "Solidne tło Entity — hover dark"
+        },
+        "solidActive": {
+          "$type": "color",
+          "$value": "{color-dark.violet.700}",
+          "$description": "Solidne tło Entity — active dark"
+        }
       }
     },
     "text": {
@@ -324,6 +405,27 @@
           "$value": "{color-dark.custom.600}",
           "$description": "Neutral text color"
         }
+      },
+      "supply": {
+        "default": {
+          "$type": "color",
+          "$value": "{color-dark.cyan.700}",
+          "$description": "Kolor tekstu Supply — dark mode"
+        }
+      },
+      "service": {
+        "default": {
+          "$type": "color",
+          "$value": "{color-dark.purple.700}",
+          "$description": "Kolor tekstu Service — dark mode"
+        }
+      },
+      "entity": {
+        "default": {
+          "$type": "color",
+          "$value": "{color-dark.violet.700}",
+          "$description": "Kolor tekstu Entity — dark mode"
+        }
       }
     },
     "icon": {
@@ -421,6 +523,27 @@
           "$type": "color",
           "$value": "{color-dark.custom.600}",
           "$description": "Neutral icon color"
+        }
+      },
+      "supply": {
+        "default": {
+          "$type": "color",
+          "$value": "{color-dark.cyan.700}",
+          "$description": "Ikona Supply — dark mode"
+        }
+      },
+      "service": {
+        "default": {
+          "$type": "color",
+          "$value": "{color-dark.purple.700}",
+          "$description": "Ikona Service — dark mode"
+        }
+      },
+      "entity": {
+        "default": {
+          "$type": "color",
+          "$value": "{color-dark.violet.700}",
+          "$description": "Ikona Entity — dark mode"
         }
       }
     },
@@ -557,6 +680,57 @@
           "$type": "color",
           "$value": "{color-dark.custom.200}",
           "$description": "Strong danger border"
+        }
+      },
+      "supply": {
+        "default": {
+          "$type": "color",
+          "$value": "{color-dark.cyan.600}",
+          "$description": "Obramowanie Supply — dark mode"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{color-dark.cyan.100}",
+          "$description": "Subtelne obramowanie Supply — dark"
+        },
+        "strong": {
+          "$type": "color",
+          "$value": "{color-dark.cyan.200}",
+          "$description": "Mocne obramowanie Supply — dark"
+        }
+      },
+      "service": {
+        "default": {
+          "$type": "color",
+          "$value": "{color-dark.purple.600}",
+          "$description": "Obramowanie Service — dark mode"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{color-dark.purple.100}",
+          "$description": "Subtelne obramowanie Service — dark"
+        },
+        "strong": {
+          "$type": "color",
+          "$value": "{color-dark.purple.200}",
+          "$description": "Mocne obramowanie Service — dark"
+        }
+      },
+      "entity": {
+        "default": {
+          "$type": "color",
+          "$value": "{color-dark.violet.600}",
+          "$description": "Obramowanie Entity — dark mode"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{color-dark.violet.100}",
+          "$description": "Subtelne obramowanie Entity — dark"
+        },
+        "strong": {
+          "$type": "color",
+          "$value": "{color-dark.violet.200}",
+          "$description": "Mocne obramowanie Entity — dark"
         }
       }
     },

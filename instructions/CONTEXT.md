@@ -77,8 +77,8 @@ color.{property}.{category}.{modifier}{State}
 → color.background.brand.solidHover
 ```
 
-**Properties:** `background`, `text`, `icon`, `border`  
-**Categories:** `base`, `brand`, `success`, `warning`, `danger`, `neutral`, `inverse`, `onSolid`  
+**Properties:** `background`, `text`, `icon`, `border`
+**Categories:** `base`, `brand`, `success`, `warning`, `danger`, `neutral`, `inverse`, `onSolid`, `supply`, `service`, `entity`
 **Modifiers:** `default`, `subtle`, `muted`, `strong`, `solid`, `inverted`  
 **States (suffix):** `Hover`, `Active`, `Focus`, `Disabled`
 
@@ -272,16 +272,20 @@ design-tokens/
 ## Matryca semantyczna — skrót
 
 ### Background
-`color.background.{base|brand|success|warning|danger|neutral}.{default|subtle|muted|solid|solidHover|solidActive|...}`
+`color.background.{base|brand|success|warning|danger|neutral|supply|service|entity}.{default|subtle|muted|solid|solidHover|solidActive|...}`
 
-### Border  
-`color.border.{base|brand|success|warning|danger|neutral|inverse|onSolid}.{default|subtle|solid|...}`
+### Border
+`color.border.{base|brand|success|warning|danger|neutral|supply|service|entity|inverse|onSolid}.{default|subtle|strong|solid|...}`
 
-### Text  
-`color.text.{base|brand|success|warning|danger|neutral|onSolid}.{default|subtle|muted|...}`
+### Text
+`color.text.{base|brand|success|warning|danger|neutral|supply|service|entity|onSolid}.{default|subtle|muted|...}`
 
-### Icon  
-`color.icon.{base|brand|success|warning|danger|neutral|onSolid}.{default|subtle|muted|...}`
+### Icon
+`color.icon.{base|brand|success|warning|danger|neutral|supply|service|entity|onSolid}.{default|subtle|muted|...}`
+
+> **supply** = cyan (zasilanie danymi / data feeds)
+> **service** = purple (usługi / API)
+> **entity** = violet (encje / rekordy danych)
 
 ---
 

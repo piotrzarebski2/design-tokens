@@ -119,6 +119,32 @@ Tokeny tła pogrupowane według kategorii semantycznych.
 | **Warning** | `{yellow.50}` | `{yellow.500}` |
 | **Danger** | `{red.50}` | `{red.600}` |
 
+### Supply / Service / Entity
+
+Trzy dodatkowe kategorie dla kontekstów biznesowych systemu Synerise:
+
+| Kategoria | Primitive family | Kontekst | Subtle | Solid |
+|-----------|-----------------|----------|--------|-------|
+| **Supply** | `cyan` | Zasilanie danymi / data feeds / integracje | `{cyan.50}` | `{cyan.600}` |
+| **Service** | `purple` | Usługi / API / połączenia zewnętrzne | `{purple.50}` | `{purple.600}` |
+| **Entity** | `violet` | Encje / rekordy / obiekty danych | `{violet.50}` | `{violet.600}` |
+
+Każda kategoria ma pełen zestaw tokenów analogiczny do `success`:
+
+```
+color.background.{supply|service|entity}.subtle
+color.background.{supply|service|entity}.subtleHover
+color.background.{supply|service|entity}.solid
+color.background.{supply|service|entity}.solidHover
+color.background.{supply|service|entity}.solidActive
+
+color.text.{supply|service|entity}.default
+color.border.{supply|service|entity}.default
+color.border.{supply|service|entity}.subtle
+color.border.{supply|service|entity}.strong
+color.icon.{supply|service|entity}.default
+```
+
 ---
 
 ## Mapowanie: Semantic → Module
