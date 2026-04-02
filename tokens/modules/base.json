@@ -947,6 +947,19 @@
             "$type": "color",
             "$value": "{color.background.base.strong}"
           },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.35",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{color.background.base.strong}"
+          },
           "focus": {
             "$type": "color",
             "$value": "{color.transparent}"
@@ -1018,8 +1031,30 @@
             "$value": "{color.transparent}"
           },
           "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.25",
+                  "space": "srgb"
+                }
+              }
+            },
             "$type": "color",
-            "$value": "{color.background.base.mutedHover}"
+            "$value": "{color.background.base.strongHover}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.10",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{color.background.base.strongHover}"
           },
           "focus": {
             "$type": "color",
