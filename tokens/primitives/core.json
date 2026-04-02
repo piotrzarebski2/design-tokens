@@ -1094,21 +1094,6 @@
     }
   },
   "space": {
-    "unit": {
-      "$type": "dimension",
-      "$value": "4px",
-      "$description": "Base spacing unit — wszystkie tokeny space są wielokrotnością tej wartości"
-    },
-    "025": {
-      "$type": "dimension",
-      "$value": "1px",
-      "$description": "Hairline — separatory, obramowania. Nie spacing."
-    },
-    "05": {
-      "$type": "dimension",
-      "$value": "2px",
-      "$description": "Micro offset — focus ring. Nie spacing."
-    },
     "1": {
       "$type": "dimension",
       "$value": "{space.unit} * 1",
@@ -1168,6 +1153,21 @@
       "$type": "dimension",
       "$value": "{space.unit} * 32",
       "$description": "32 × 4px = 128px"
+    },
+    "unit": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": "Base spacing unit — wszystkie tokeny space są wielokrotnością tej wartości"
+    },
+    "025": {
+      "$type": "dimension",
+      "$value": "1px",
+      "$description": "Hairline — separatory, obramowania. Nie spacing."
+    },
+    "05": {
+      "$type": "dimension",
+      "$value": "2px",
+      "$description": "Micro offset — focus ring. Nie spacing."
     }
   },
   "fontFamily": {
@@ -1324,10 +1324,10 @@
       "$value": {
         "color": "#2329361a",
         "type": "dropShadow",
-        "x": 0,
-        "y": 16,
-        "blur": 32,
-        "spread": 0
+        "x": "0",
+        "y": "16",
+        "blur": "32",
+        "spread": "0"
       }
     },
     "Shadow 3": {
@@ -1335,10 +1335,10 @@
       "$value": {
         "color": "#2329361c",
         "type": "dropShadow",
-        "x": 0,
-        "y": 60,
-        "blur": 80,
-        "spread": 0
+        "x": "0",
+        "y": "60",
+        "blur": "80",
+        "spread": "0"
       }
     },
     "Shadow 4": {
@@ -1346,10 +1346,10 @@
       "$value": {
         "color": "#23293633",
         "type": "dropShadow",
-        "x": 0,
-        "y": 60,
-        "blur": 80,
-        "spread": 0
+        "x": "0",
+        "y": "60",
+        "blur": "80",
+        "spread": "0"
       }
     }
   }

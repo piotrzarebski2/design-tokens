@@ -190,9 +190,6 @@
           "$description": "Overlay background for modals/dropdowns"
         },
         "solid": {
-          "$type": "color",
-          "$value": "{color-dark.grey.800}",
-          "$description": "Tło tooltipu (dark mode) — color-dark.grey.800 @ 90%. [TYMCZASOWE — do wycofania po tokenizacji modules]",
           "$extensions": {
             "studio.tokens": {
               "modify": {
@@ -201,7 +198,10 @@
                 "space": "srgb"
               }
             }
-          }
+          },
+          "$type": "color",
+          "$value": "{color-dark.grey.800}",
+          "$description": "Tło tooltipu (dark mode) — color-dark.grey.800 @ 90%. [TYMCZASOWE — do wycofania po tokenizacji modules]"
         }
       },
       "translucent": {
@@ -211,9 +211,6 @@
           "$description": "Przezroczyste tło (brak wypełnienia). [TYMCZASOWE — do wycofania po tokenizacji modules]"
         },
         "subtle": {
-          "$type": "color",
-          "$value": "{color-dark.grey.700}",
-          "$description": "Subtelne półprzezroczyste tło (dark) — jasny kolor 10% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
           "$extensions": {
             "studio.tokens": {
               "modify": {
@@ -222,12 +219,12 @@
                 "space": "srgb"
               }
             }
-          }
+          },
+          "$type": "color",
+          "$value": "{color-dark.grey.700}",
+          "$description": "Subtelne półprzezroczyste tło (dark) — jasny kolor 10% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]"
         },
         "subtleHover": {
-          "$type": "color",
-          "$value": "{color-dark.grey.700}",
-          "$description": "Subtelne półprzezroczyste tło (dark) — hover — 15% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
           "$extensions": {
             "studio.tokens": {
               "modify": {
@@ -236,12 +233,12 @@
                 "space": "srgb"
               }
             }
-          }
-        },
-        "subtleActive": {
+          },
           "$type": "color",
           "$value": "{color-dark.grey.700}",
-          "$description": "Subtelne półprzezroczyste tło (dark) — active — 25% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
+          "$description": "Subtelne półprzezroczyste tło (dark) — hover — 15% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]"
+        },
+        "subtleActive": {
           "$extensions": {
             "studio.tokens": {
               "modify": {
@@ -250,12 +247,12 @@
                 "space": "srgb"
               }
             }
-          }
+          },
+          "$type": "color",
+          "$value": "{color-dark.grey.700}",
+          "$description": "Subtelne półprzezroczyste tło (dark) — active — 25% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]"
         },
         "muted": {
-          "$type": "color",
-          "$value": "{color-dark.grey.600}",
-          "$description": "Stonowane półprzezroczyste tło (dark) — 10% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
           "$extensions": {
             "studio.tokens": {
               "modify": {
@@ -264,12 +261,12 @@
                 "space": "srgb"
               }
             }
-          }
+          },
+          "$type": "color",
+          "$value": "{color-dark.grey.600}",
+          "$description": "Stonowane półprzezroczyste tło (dark) — 10% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]"
         },
         "mutedHover": {
-          "$type": "color",
-          "$value": "{color-dark.grey.700}",
-          "$description": "Stonowane półprzezroczyste tło (dark) — hover — 15% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
           "$extensions": {
             "studio.tokens": {
               "modify": {
@@ -278,12 +275,12 @@
                 "space": "srgb"
               }
             }
-          }
-        },
-        "mutedActive": {
+          },
           "$type": "color",
           "$value": "{color-dark.grey.700}",
-          "$description": "Stonowane półprzezroczyste tło (dark) — active — 25% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
+          "$description": "Stonowane półprzezroczyste tło (dark) — hover — 15% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]"
+        },
+        "mutedActive": {
           "$extensions": {
             "studio.tokens": {
               "modify": {
@@ -292,12 +289,12 @@
                 "space": "srgb"
               }
             }
-          }
-        },
-        "strong": {
+          },
           "$type": "color",
           "$value": "{color-dark.grey.700}",
-          "$description": "Mocne półprzezroczyste tło (dark) — 35% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
+          "$description": "Stonowane półprzezroczyste tło (dark) — active — 25% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]"
+        },
+        "strong": {
           "$extensions": {
             "studio.tokens": {
               "modify": {
@@ -306,12 +303,12 @@
                 "space": "srgb"
               }
             }
-          }
+          },
+          "$type": "color",
+          "$value": "{color-dark.grey.700}",
+          "$description": "Mocne półprzezroczyste tło (dark) — 35% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]"
         },
         "strongHover": {
-          "$type": "color",
-          "$value": "{color-dark.grey.800}",
-          "$description": "Mocne półprzezroczyste tło (dark) — hover — 25% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
           "$extensions": {
             "studio.tokens": {
               "modify": {
@@ -320,7 +317,10 @@
                 "space": "srgb"
               }
             }
-          }
+          },
+          "$type": "color",
+          "$value": "{color-dark.grey.800}",
+          "$description": "Mocne półprzezroczyste tło (dark) — hover — 25% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]"
         }
       },
       "custom": {
@@ -345,7 +345,7 @@
           "$value": "{color-dark.custom.700}"
         }
       },
-      "supply": {
+      "entity": {
         "subtle": {
           "$type": "color",
           "$value": "{color-dark.cyan.900}",
@@ -399,7 +399,7 @@
           "$description": "Solidne tło Service — active dark"
         }
       },
-      "entity": {
+      "supply": {
         "subtle": {
           "$type": "color",
           "$value": "{color-dark.violet.900}",
@@ -539,7 +539,7 @@
           "$description": "Neutral text color"
         }
       },
-      "supply": {
+      "entity": {
         "default": {
           "$type": "color",
           "$value": "{color-dark.cyan.700}",
@@ -553,7 +553,7 @@
           "$description": "Kolor tekstu Service — dark mode"
         }
       },
-      "entity": {
+      "supply": {
         "default": {
           "$type": "color",
           "$value": "{color-dark.violet.700}",
@@ -658,7 +658,7 @@
           "$description": "Neutral icon color"
         }
       },
-      "supply": {
+      "entity": {
         "default": {
           "$type": "color",
           "$value": "{color-dark.cyan.700}",
@@ -672,7 +672,7 @@
           "$description": "Ikona Service — dark mode"
         }
       },
-      "entity": {
+      "supply": {
         "default": {
           "$type": "color",
           "$value": "{color-dark.violet.700}",
@@ -815,7 +815,7 @@
           "$description": "Strong danger border"
         }
       },
-      "supply": {
+      "entity": {
         "default": {
           "$type": "color",
           "$value": "{color-dark.cyan.600}",
@@ -849,7 +849,7 @@
           "$description": "Mocne obramowanie Service — dark"
         }
       },
-      "entity": {
+      "supply": {
         "default": {
           "$type": "color",
           "$value": "{color-dark.violet.600}",
