@@ -1123,6 +1123,15 @@
       "tertiary-white": {
         "bg": {
           "default": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.15",
+                  "space": "srgb"
+                }
+              }
+            },
             "$type": "color",
             "$value": "{color.background.neutral.solid}"
           },
