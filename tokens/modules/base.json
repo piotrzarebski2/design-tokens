@@ -1802,7 +1802,7 @@
       },
       "borderRadius": {
         "$type": "dimension",
-        "$value": "{border.radius.sm}",
+        "$value": "{border.radius.xs}",
         "$description": "Form field border radius (3px)"
       },
       "borderWidth": {
@@ -1813,7 +1813,7 @@
         },
         "focus": {
           "$type": "dimension",
-          "$value": "{border.width.default}",
+          "$value": "{border.width.focus}",
           "$description": "Form field border width for focus state (2px)"
         },
         "validated": {
