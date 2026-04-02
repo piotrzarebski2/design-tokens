@@ -188,6 +188,139 @@
           "$type": "color",
           "$value": "rgba(35,41,54,0.5)",
           "$description": "Overlay background for modals/dropdowns"
+        },
+        "solid": {
+          "$type": "color",
+          "$value": "{color.grey.800}",
+          "$description": "Ciemne tło tooltipu — grey.800 @ 90% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.90",
+                "space": "srgb"
+              }
+            }
+          }
+        }
+      },
+      "translucent": {
+        "none": {
+          "$type": "color",
+          "$value": "{color.transparent}",
+          "$description": "Przezroczyste tło (brak wypełnienia). [TYMCZASOWE — do wycofania po tokenizacji modules]"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{color.grey.300}",
+          "$description": "Subtelne półprzezroczyste tło — 10% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.10",
+                "space": "srgb"
+              }
+            }
+          }
+        },
+        "subtleHover": {
+          "$type": "color",
+          "$value": "{color.grey.300}",
+          "$description": "Subtelne półprzezroczyste tło — hover — 15% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.15",
+                "space": "srgb"
+              }
+            }
+          }
+        },
+        "subtleActive": {
+          "$type": "color",
+          "$value": "{color.grey.300}",
+          "$description": "Subtelne półprzezroczyste tło — active — 25% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.25",
+                "space": "srgb"
+              }
+            }
+          }
+        },
+        "muted": {
+          "$type": "color",
+          "$value": "{color.grey.500}",
+          "$description": "Stonowane półprzezroczyste tło — 10% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.10",
+                "space": "srgb"
+              }
+            }
+          }
+        },
+        "mutedHover": {
+          "$type": "color",
+          "$value": "{color.grey.400}",
+          "$description": "Stonowane półprzezroczyste tło — hover — 15% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.15",
+                "space": "srgb"
+              }
+            }
+          }
+        },
+        "mutedActive": {
+          "$type": "color",
+          "$value": "{color.grey.400}",
+          "$description": "Stonowane półprzezroczyste tło — active — 25% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.25",
+                "space": "srgb"
+              }
+            }
+          }
+        },
+        "strong": {
+          "$type": "color",
+          "$value": "{color.grey.400}",
+          "$description": "Mocne półprzezroczyste tło — 35% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.35",
+                "space": "srgb"
+              }
+            }
+          }
+        },
+        "strongHover": {
+          "$type": "color",
+          "$value": "{color.grey.500}",
+          "$description": "Mocne półprzezroczyste tło — hover — 25% krycia. [TYMCZASOWE — do wycofania po tokenizacji modules]",
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.25",
+                "space": "srgb"
+              }
+            }
+          }
         }
       },
       "custom": {

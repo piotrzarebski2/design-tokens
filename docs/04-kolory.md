@@ -119,6 +119,31 @@ Tokeny tła pogrupowane według kategorii semantycznych.
 | **Warning** | `{yellow.50}` | `{yellow.500}` |
 | **Danger** | `{red.50}` | `{red.600}` |
 
+### Overlay
+
+| Token | Zastosowanie |
+|-------|--------------|
+| `overlay.default` | Maska modali (`rgba(35,41,54,0.5)`) |
+| `overlay.solid` | Tło tooltipu — `grey.800 @ 90%` *(tymczasowe)* |
+
+### Translucent *(tymczasowe)*
+
+Kategoria `color.background.translucent.*` dostarcza półprzezroczyste tła przeznaczone do użycia na kolorowych lub ciemnych powierzchniach (np. przyciski tertiary na ciemnym headerze). Używa składni alpha modifier zamiast notacji hex-alpha suffix.
+
+| Token | Opacity | Zastosowanie |
+|-------|---------|--------------|
+| `translucent.none` | 0% | Brak tła (transparent) |
+| `translucent.subtle` | 10% | Delikatna warstwa |
+| `translucent.subtleHover` | 15% | Hover delikatny |
+| `translucent.subtleActive` | 25% | Active delikatny |
+| `translucent.muted` | 10% | Stonowana warstwa |
+| `translucent.mutedHover` | 15% | Hover stonowany |
+| `translucent.mutedActive` | 25% | Active stonowany |
+| `translucent.strong` | 35% | Wyraźna warstwa |
+| `translucent.strongHover` | 25% | Hover wyraźny |
+
+> ⚠️ Kategoria tymczasowa — zostanie wycofana po pełnej tokenizacji warstwy modules.
+
 ### Supply / Service / Entity
 
 Trzy dodatkowe kategorie dla kontekstów biznesowych systemu Synerise:

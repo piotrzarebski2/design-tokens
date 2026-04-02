@@ -272,7 +272,9 @@ design-tokens/
 ## Matryca semantyczna — skrót
 
 ### Background
-`color.background.{base|brand|success|warning|danger|neutral|supply|service|entity}.{default|subtle|muted|solid|solidHover|solidActive|...}`
+`color.background.{base|brand|success|warning|danger|neutral|overlay|translucent|supply|service|entity}.{default|subtle|muted|solid|solidHover|solidActive|...}`
+
+> ⚠️ **Tokeny tymczasowe:** Kategoria `translucent` oraz `overlay.solid` są pomostem dla Phase 1 (direct semantic usage). Zostaną wycofane po pełnej tokenizacji warstwy modules.
 
 ### Border
 `color.border.{base|brand|success|warning|danger|neutral|supply|service|entity|inverse|onSolid}.{default|subtle|strong|solid|...}`
