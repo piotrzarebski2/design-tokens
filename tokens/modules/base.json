@@ -457,7 +457,7 @@
         },
         "separator": {
           "$type": "color",
-          "$value": "{color.background.base.muted}",
+          "$value": "{color.border.base.strong}",
           "$description": "Separator for split secondary button (grey.100)"
         }
       },
@@ -520,6 +520,15 @@
             "$description": "Tertiary bg active — grey.400 @35%"
           },
           "disabled": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.15",
+                  "space": "srgb"
+                }
+              }
+            },
             "$type": "color",
             "$value": "{color.background.base.strong}",
             "$description": "Tertiary bg disabled — grey.400 @15%"
@@ -1281,8 +1290,17 @@
           }
         },
         "separator": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.25",
+                "space": "srgb"
+              }
+            }
+          },
           "$type": "color",
-          "$value": "{color.achromatic.max}",
+          "$value": "{color.border.base.strong}",
           "$description": "Separator for split tertiary-white button (white)"
         }
       },
