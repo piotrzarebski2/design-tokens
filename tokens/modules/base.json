@@ -51,15 +51,6 @@
             "$description": "Primary button text color for active/selected state (same as default for solid variant)"
           },
           "disabled": {
-            "$extensions": {
-              "studio.tokens": {
-                "modify": {
-                  "type": "alpha",
-                  "value": "0.4",
-                  "space": "srgb"
-                }
-              }
-            },
             "$type": "color",
             "$value": "{color.text.onSolid.brand}",
             "$description": "Primary button text color for disabled state (same as default, opacity applied separately)"
@@ -87,15 +78,6 @@
             "$description": "Primary button icon color for active/selected state (same as default for solid variant)"
           },
           "disabled": {
-            "$extensions": {
-              "studio.tokens": {
-                "modify": {
-                  "type": "alpha",
-                  "value": "0.4",
-                  "space": "srgb"
-                }
-              }
-            },
             "$type": "color",
             "$value": "{color.text.onSolid.brand}",
             "$description": "Primary button icon color for disabled state (same as default, opacity applied separately)"
@@ -123,15 +105,6 @@
             "$description": "Primary button border color for active/selected state (transparent for solid variant)"
           },
           "disabled": {
-            "$extensions": {
-              "studio.tokens": {
-                "modify": {
-                  "type": "alpha",
-                  "value": "0.4",
-                  "space": "srgb"
-                }
-              }
-            },
             "$type": "color",
             "$value": "{color.transparent}",
             "$description": "Primary button border color for disabled state (transparent)"
@@ -1337,13 +1310,6 @@
           },
           "disabled": {
             "$extensions": {
-              "studio.tokens": {
-                "modify": {
-                  "type": "alpha",
-                  "value": "0.4",
-                  "space": "srgb"
-                }
-              },
               "com.figma.scopes": [
                 "ALL_FILLS",
                 "FRAME_FILL"
@@ -1421,7 +1387,7 @@
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.focus.base.default}",
+            "$value": "{color.focus.base.strong}",
             "$description": "Custom-color button border focus"
           },
           "active": {
@@ -1437,7 +1403,7 @@
         },
         "separator": {
           "$type": "color",
-          "$value": "{color.background.brand.solidHover}",
+          "$value": "{color.background.custom.solidHover}",
           "$description": "Separator for split custom-color button — uses brand solidHover as fallback"
         }
       },
@@ -1554,7 +1520,7 @@
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.focus.base.default}",
+            "$value": "{color.focus.base.strong}",
             "$description": "Ghost-custom-color border focus"
           },
           "active": {
