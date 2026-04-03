@@ -24,15 +24,6 @@
             "$description": "Primary button background color for active/selected state (same as default for solid variant)"
           },
           "disabled": {
-            "$extensions": {
-              "studio.tokens": {
-                "modify": {
-                  "type": "alpha",
-                  "value": "0.4",
-                  "space": "srgb"
-                }
-              }
-            },
             "$type": "color",
             "$value": "{color.background.brand.solid}",
             "$description": "Primary button background color for disabled state (same as default, opacity applied separately)"
@@ -556,15 +547,6 @@
             "$description": "Tertiary bg active — grey.400 @35%"
           },
           "disabled": {
-            "$extensions": {
-              "studio.tokens": {
-                "modify": {
-                  "type": "alpha",
-                  "value": "0.15",
-                  "space": "srgb"
-                }
-              }
-            },
             "$type": "color",
             "$value": "{color.background.base.strong}",
             "$description": "Tertiary bg disabled — grey.400 @15%"
@@ -1597,7 +1579,7 @@
       "height": {
         "normal": {
           "$type": "dimension",
-          "$value": "{size.md}",
+          "$value": "{size.sm}",
           "$description": "Button height for normal size (32px)"
         },
         "large": {
@@ -1686,7 +1668,7 @@
       },
       "radius": {
         "$type": "dimension",
-        "$value": "{border.radius.sm}",
+        "$value": "{border.radius.xs}",
         "$description": "Border radius for buttons (3px)"
       }
     },
@@ -1694,7 +1676,7 @@
       "ring": {
         "width": {
           "$type": "dimension",
-          "$value": "{outline.width.focus}",
+          "$value": "{border.width.2}",
           "$description": "Focus ring width for buttons (2px)"
         }
       }
