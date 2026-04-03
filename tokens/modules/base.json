@@ -772,7 +772,7 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.background.danger.solid}",
+            "$value": "{color.text.danger.default}",
             "$description": "Ghost primary danger button text color for hover state"
           },
           "focus": {
@@ -794,27 +794,27 @@
         "icon": {
           "default": {
             "$type": "color",
-            "$value": "{color.text.danger.default}",
+            "$value": "{color.icon.danger.default}",
             "$description": "Ghost primary danger button icon color for default state"
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.background.danger.solid}",
+            "$value": "{color.icon.danger.default}",
             "$description": "Ghost primary danger button icon color for hover state"
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.text.danger.default}",
+            "$value": "{color.icon.danger.default}",
             "$description": "Ghost primary danger button icon color for focus state"
           },
           "active": {
             "$type": "color",
-            "$value": "{color.text.danger.default}",
+            "$value": "{color.icon.danger.default}",
             "$description": "Ghost primary danger button icon color for active/selected state"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{color.text.danger.default}",
+            "$value": "{color.icon.danger.default}",
             "$description": "Ghost primary danger button icon color for disabled state (same as default, opacity applied separately)"
           }
         },
@@ -839,7 +839,7 @@
         },
         "separator": {
           "$type": "color",
-          "$value": "{color.background.base.muted}",
+          "$value": "{color.border.base.default}",
           "$description": "Separator for split ghost-primary-danger button"
         }
       },
@@ -879,7 +879,7 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.background.success.solid}",
+            "$value": "{color.text.success.default}",
             "$description": "Ghost primary success button text color for hover state"
           },
           "focus": {
@@ -901,27 +901,27 @@
         "icon": {
           "default": {
             "$type": "color",
-            "$value": "{color.text.success.default}",
+            "$value": "{color.icon.success.default}",
             "$description": "Ghost primary success button icon color for default state"
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.background.success.solid}",
+            "$value": "{color.icon.success.default}",
             "$description": "Ghost primary success button icon color for hover state"
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.text.success.default}",
+            "$value": "{color.icon.success.default}",
             "$description": "Ghost primary success button icon color for focus state"
           },
           "active": {
             "$type": "color",
-            "$value": "{color.text.success.default}",
+            "$value": "{color.icon.success.default}",
             "$description": "Ghost primary success button icon color for active/selected state"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{color.text.success.default}",
+            "$value": "{color.icon.success.default}",
             "$description": "Ghost primary success button icon color for disabled state (same as default, opacity applied separately)"
           }
         },
@@ -946,7 +946,7 @@
         },
         "separator": {
           "$type": "color",
-          "$value": "{color.background.base.muted}",
+          "$value": "{color.border.base.default}",
           "$description": "Separator for split ghost-primary-success button"
         }
       },
