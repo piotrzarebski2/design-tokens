@@ -1003,15 +1003,15 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.text.base.default}"
+            "$value": "{color.text.base.muted}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.text.base.default}"
+            "$value": "{color.text.base.muted}"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{color.text.base.default}"
+            "$value": "{color.text.base.muted}"
           }
         },
         "border": {
@@ -1035,24 +1035,24 @@
         "icon": {
           "default": {
             "$type": "color",
-            "$value": "{color.text.base.muted}"
+            "$value": "{color.icon.base.default}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.text.base.default}"
+            "$value": "{color.icon.base.default}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.text.base.default}"
+            "$value": "{color.icon.base.default}"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{color.text.base.default}"
+            "$value": "{color.icon.base.default}"
           }
         },
         "separator": {
           "$type": "color",
-          "$value": "{color.background.base.muted}",
+          "$value": "{color.border.base.default}",
           "$description": "Separator for split ghost-secondary button (grey.100)"
         }
       },
@@ -1105,37 +1105,37 @@
         "text": {
           "default": {
             "$type": "color",
-            "$value": "{color.mono.00}"
+            "$value": "{color.text.onSolid.default}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.mono.00}"
+            "$value": "{color.text.onSolid.default}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.mono.00}"
+            "$value": "{color.text.onSolid.default}"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{color.mono.00}"
+            "$value": "{color.text.onSolid.default}"
           }
         },
         "icon": {
           "default": {
             "$type": "color",
-            "$value": "{color.mono.00}"
+            "$value": "{color.icon.onSolid.default}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{color.mono.00}"
+            "$value": "{color.icon.onSolid.default}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{color.mono.00}"
+            "$value": "{color.icon.onSolid.default}"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{color.mono.00}"
+            "$value": "{color.icon.onSolid.default}"
           }
         },
         "border": {
@@ -1157,8 +1157,17 @@
           }
         },
         "separator": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.10",
+                "space": "srgb"
+              }
+            }
+          },
           "$type": "color",
-          "$value": "{color.achromatic.max}",
+          "$value": "{color.background.base.default}",
           "$description": "Separator for split ghost-secondary-white button (white)"
         }
       },
