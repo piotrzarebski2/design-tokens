@@ -365,7 +365,7 @@
           },
           "active": {
             "$type": "color",
-            "$value": "{color.background.brand.solid}",
+            "$value": "{color.background.base.strong}",
             "$description": "Secondary button background color for active/selected state (blue background for toggle)"
           },
           "disabled": {
