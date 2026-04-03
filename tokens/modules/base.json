@@ -145,6 +145,11 @@
             "$value": "{color.transparent}",
             "$description": "Primary button border color for disabled state (transparent)"
           }
+        },
+        "separator": {
+          "$type": "color",
+          "$value": "{color.background.brand.solidHover}",
+          "$description": "Separator between label and icon-right in split button — primary variant (blue.500)"
         }
       },
       "primary-danger": {
@@ -255,6 +260,11 @@
             "$value": "{color.transparent}",
             "$description": "Primary danger button border color for disabled state (transparent)"
           }
+        },
+        "separator": {
+          "$type": "color",
+          "$value": "{color.background.danger.solidHover}",
+          "$description": "Separator for split danger button"
         }
       },
       "primary-success": {
@@ -365,6 +375,11 @@
             "$value": "{color.transparent}",
             "$description": "Primary success button border color for disabled state (transparent)"
           }
+        },
+        "separator": {
+          "$type": "color",
+          "$value": "{color.background.success.solidHover}",
+          "$description": "Separator for split success button"
         }
       },
       "secondary": {
@@ -475,6 +490,11 @@
             "$value": "{color.border.base.default}",
             "$description": "Secondary button border color for disabled state (same as default, opacity applied separately)"
           }
+        },
+        "separator": {
+          "$type": "color",
+          "$value": "{color.background.base.muted}",
+          "$description": "Separator for split secondary button (grey.100)"
         }
       },
       "tertiary": {
@@ -621,6 +641,11 @@
             "$type": "color",
             "$value": "{color.border.base.none}"
           }
+        },
+        "separator": {
+          "$type": "color",
+          "$value": "{color.background.base.muted}",
+          "$description": "Separator for split tertiary button (grey.100)"
         }
       },
       "ghost-primary": {
@@ -740,6 +765,11 @@
             "$type": "color",
             "$value": "{color.border.base.none}"
           }
+        },
+        "separator": {
+          "$type": "color",
+          "$value": "{color.background.base.muted}",
+          "$description": "Separator for split ghost-primary button (grey.100)"
         }
       },
       "ghost-primary-danger": {
@@ -842,6 +872,11 @@
             "$type": "color",
             "$value": "{color.border.base.none}"
           }
+        },
+        "separator": {
+          "$type": "color",
+          "$value": "{color.background.base.muted}",
+          "$description": "Separator for split ghost-primary-danger button"
         }
       },
       "ghost-primary-success": {
@@ -944,6 +979,11 @@
             "$type": "color",
             "$value": "{color.border.base.none}"
           }
+        },
+        "separator": {
+          "$type": "color",
+          "$value": "{color.background.base.muted}",
+          "$description": "Separator for split ghost-primary-success button"
         }
       },
       "ghost-secondary": {
@@ -1045,6 +1085,11 @@
             "$type": "color",
             "$value": "{color.text.base.default}"
           }
+        },
+        "separator": {
+          "$type": "color",
+          "$value": "{color.background.base.muted}",
+          "$description": "Separator for split ghost-secondary button (grey.100)"
         }
       },
       "ghost-secondary-white": {
@@ -1146,6 +1191,11 @@
             "$type": "color",
             "$value": "{color.border.base.none}"
           }
+        },
+        "separator": {
+          "$type": "color",
+          "$value": "{color.achromatic.max}",
+          "$description": "Separator for split ghost-secondary-white button (white)"
         }
       },
       "tertiary-white": {
@@ -1274,6 +1324,11 @@
             "$type": "color",
             "$value": "{color.border.base.none}"
           }
+        },
+        "separator": {
+          "$type": "color",
+          "$value": "{color.achromatic.max}",
+          "$description": "Separator for split tertiary-white button (white)"
         }
       },
       "custom-color": {
@@ -1397,6 +1452,11 @@
             "$value": "{color.transparent}",
             "$description": "Custom-color button border disabled — transparent"
           }
+        },
+        "separator": {
+          "$type": "color",
+          "$value": "{color.background.brand.solidHover}",
+          "$description": "Separator for split custom-color button — uses brand solidHover as fallback"
         }
       },
       "ghost-custom-color": {
@@ -1525,6 +1585,11 @@
             "$value": "{color.border.base.none}",
             "$description": "Ghost-custom-color border disabled"
           }
+        },
+        "separator": {
+          "$type": "color",
+          "$value": "{color.background.base.muted}",
+          "$description": "Separator for split ghost-custom-color button"
         }
       }
     },
@@ -1602,6 +1667,13 @@
             "$type": "dimension",
             "$value": "{inset.xs}",
             "$description": "Vertical padding for two-icons button variant (4px)"
+          }
+        },
+        "icon-text": {
+          "icon-side": {
+            "$type": "dimension",
+            "$value": "{inset.sm}",
+            "$description": "Padding on the icon side for icon+text button variants (8px — narrower than text side)"
           }
         }
       }
