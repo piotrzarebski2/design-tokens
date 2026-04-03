@@ -608,7 +608,7 @@
         },
         "separator": {
           "$type": "color",
-          "$value": "{color.background.base.muted}",
+          "$value": "{color.border.base.default}",
           "$description": "Separator for split tertiary button (grey.100)"
         }
       },
