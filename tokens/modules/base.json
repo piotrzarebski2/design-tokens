@@ -2467,12 +2467,12 @@
       "color": {
         "solid": {
           "$type": "color",
-          "$value": "{color.border.base.default}",
+          "$value": "{color.border.base.strong}",
           "$description": "Solid divider line color"
         },
         "dashed": {
           "$type": "color",
-          "$value": "{color.border.base.strong}",
+          "$value": "{color.border.base.strongHover}",
           "$description": "Dashed divider line color"
         }
       }
