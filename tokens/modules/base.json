@@ -350,7 +350,7 @@
         "bg": {
           "default": {
             "$type": "color",
-            "$value": "{color.background.base.muted}",
+            "$value": "{color.background.base.subtle}",
             "$description": "Secondary button background color for default state"
           },
           "hover": {
@@ -1818,7 +1818,7 @@
       "text": {
         "color": {
           "$type": "color",
-          "$value": "{color.text.base.subtle}",
+          "$value": "{color.text.base.muted}",
           "$description": "Description text color for form components"
         },
         "typography": {
